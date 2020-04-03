@@ -42,6 +42,7 @@ template {
 	display: none;
 }
 a {
+	color: rgb(255, 187, 0);
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
 }
@@ -200,8 +201,8 @@ html {
 	box-sizing: inherit;
 }
 body {
-	background: rgb(241, 241, 241);
-	color: rgb(20, 20, 20);
+	background: rgb(27, 27, 27);
+	color: rgb(255, 255, 255);
 	font-family: sans-serif;
 	font-weight: normal;
 	word-wrap: break-word;
