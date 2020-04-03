@@ -1,5 +1,16 @@
 .header {
-	padding: 1rem 0 3rem;
+	background: rgb(0, 110, 255);
+	height: 6vh;
+	display: flex;
+	align-items: center;
+
+	nav {
+		height: 100%;
+
+		ul {
+			height: 100%;
+		}
+	}
 }
 
 .title {
@@ -12,19 +23,29 @@
 	display: flex;
 	list-style-type: none;
 	margin: 0;
+	align-items: center;
+
+	li {
+		margin-bottom: 0;
+		height: 100%;
+	}
+
+	li:hover {
+		background: rgb(62, 146, 255);
+	}
 }
 
 .nav-item {
-	color: #999999;
+	color: #f1f1f1;
 	font-size: .9rem;
-	margin-right: 1.3rem;
+	margin: auto 1rem;
 	text-decoration: none;
-}
-
-.nav-item:hover {
-	color: cyan;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .active-nav-item {
-	text-decoration: underline;
+	border-bottom: .2rem solid rgb(255, 0, 76);
 }

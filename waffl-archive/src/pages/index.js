@@ -1,14 +1,11 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 import Layout from '../components/layout/layout';
 
 export default () => (
 	<Layout>
-		<h1>Aloha</h1>
-		<h2>I'm Kelso, I live in ATX!</h2>
-		<p>
-			Need a developer? <Link to="/contact">Contact me.</Link>
-		</p>
+		<h1>WAFFL Archive</h1>
+		<h2>The digital home of the Westwood Affiliated Fantasy Football League</h2>
 	</Layout>
 );
