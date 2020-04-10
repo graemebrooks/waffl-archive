@@ -16,7 +16,7 @@ const HOFPage = () => {
 			<p>
 				For any questions, feel free to <Link to="/contact">contact me</Link>
 			</p>
-			<SwiperCarousel />
+			<SwiperCarousel className="swiperContainer" />
 		</Layout>
 	);
 };
