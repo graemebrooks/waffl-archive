@@ -13,6 +13,11 @@ const statbookTeam = ({ team }) => {
 			</p>
 			<h4>Points Per Game</h4>
 			<p>{team.allTimePointsPerGame}</p>
+			<h4>Highest Scoring Game</h4>
+			<p>
+				{team.highestScoringGame.score}, {team.highestScoringGame.week}
+			</p>
+			<img src={team.logoUrl} className={statbookTeamStyles.logo} />
 		</div>
 	);
 };
