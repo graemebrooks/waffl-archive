@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 
 // components
 import Layout from '../components/layout/layout';
+import RecordRow from '../components/recordRow/recordRow';
 import Spinner from '../components/spinner/spinner';
 
 // styles
@@ -27,17 +28,8 @@ const RecordbookPage = () => {
 		return (
 			<Layout>
 				<h1>WAFFL Recordbook</h1>
-				<ol>
-					{data.highestPlayerScores.map((score) => {
-						return (
-							<li>
-								<p>
-									{score.playerTeamDate} - {score.score}
-								</p>
-							</li>
-						);
-					})}
-				</ol>
+				<h2>Player Records</h2>
+				<RecordRow data={data} />
 			</Layout>
 		);
 	}
