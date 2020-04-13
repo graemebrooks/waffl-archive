@@ -1,12 +1,15 @@
 .teamCard {
-	height: 30rem;
-	width: 30rem;
+	width: 100%;
 	background: rgb(65, 65, 65);
 	border: solid 1px white;
 	padding-left: 15px;
+	display: flex;
+	margin: 0.5rem;
 
-	h4 {
-		color: orange;
+	align-items: center;
+
+	* {
+		margin: 1rem;
 	}
 }
 

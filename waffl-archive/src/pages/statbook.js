@@ -26,7 +26,7 @@ const StatbookPage = () => {
 		return (
 			<Layout>
 				<h1>WAFFL Statbook</h1>
-				<div className={statbookPageStyles.container}>
+				<div className={statbookPageStyles.statsContainer}>
 					{data.teams.map((team) => {
 						return <StatbookTeam team={team} />;
 					})}
