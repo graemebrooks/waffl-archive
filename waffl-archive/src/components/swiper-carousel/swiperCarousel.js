@@ -18,15 +18,15 @@ const SwiperCarousel = () => {
 		centeredSlides: true
 	};
 	return (
-		<div className={swiperStyles.hofSwiper}>
-			<Swiper {...params}>
+		<div className={swiperStyles.container}>
+			<Swiper {...params} className={swiperStyles.swiper}>
 				<div className={swiperStyles.swiperItem}>
 					<img src={hofImages.CalvinJohnson} />
 				</div>
-				<div>
+				<div className={swiperStyles.swiperItem}>
 					<img src={hofImages.PeytonManning} />
 				</div>
-				<div>
+				<div className={swiperStyles.swiperItem}>
 					<img src={hofImages.JamaalCharles} />
 				</div>
 				<div>
