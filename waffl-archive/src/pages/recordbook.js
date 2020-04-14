@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'gatsby';
 
 // components
 import Layout from '../components/layout/layout';
@@ -28,7 +27,7 @@ const RecordbookPage = () => {
 		return (
 			<Layout>
 				<h1>WAFFL Recordbook</h1>
-				<h2>Player Records</h2>
+				<h2 className={recordbookPageStyles.recordType}>Player Records</h2>
 				<RecordRow data={data} />
 			</Layout>
 		);

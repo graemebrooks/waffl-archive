@@ -21,22 +21,22 @@ const SwiperCarousel = () => {
 		<div className={swiperStyles.container}>
 			<Swiper {...params} className={swiperStyles.swiper}>
 				<div className={swiperStyles.swiperItem}>
-					<img src={hofImages.CalvinJohnson} />
+					<img alt="Calvin Johnson" src={hofImages.CalvinJohnson} />
 				</div>
 				<div className={swiperStyles.swiperItem}>
-					<img src={hofImages.PeytonManning} />
+					<img alt="Peyton Manning" src={hofImages.PeytonManning} />
 				</div>
 				<div className={swiperStyles.swiperItem}>
-					<img src={hofImages.JamaalCharles} />
+					<img alt="Jamaal Charles" src={hofImages.JamaalCharles} />
 				</div>
 				<div>
-					<img src={hofImages.MattForte} />
+					<img alt="Matt Forte" src={hofImages.MattForte} />
 				</div>
 				<div>
-					<img src={hofImages.RobGronkowski} />
+					<img alt="Rob Gronkowski" src={hofImages.RobGronkowski} />
 				</div>
 				<div>
-					<img src={hofImages.DemarcoMurray} />
+					<img alt="Demarco Murray" src={hofImages.DemarcoMurray} />
 				</div>
 			</Swiper>
 		</div>
