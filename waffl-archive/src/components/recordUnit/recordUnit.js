@@ -8,6 +8,8 @@ const Div = styled.div`
 
 	span {
 		color: orange;
+		font-weight: bold;
+		font-size: 1.2rem;
 	}
 `;
 

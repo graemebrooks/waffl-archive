@@ -7,7 +7,6 @@ import RecordUnit from '../recordUnit/recordUnit';
 // styles
 const Div = styled.div`
 	width: 90vw;
-	height: 8rem;
 	padding: .5rem;
 
 	display: flex;
@@ -44,14 +43,14 @@ const Div = styled.div`
 	}
 
 	.rowBody {
-		color: black;
-		background: white;
+		color: white;
+		background: #424242;
 	}
 `;
 
 const RecordRow = ({ data, title }) => {
 	const [ selected, setSelected ] = useState({
-		selected: 'Player'
+		selected: data.tabTitles[0]
 	});
 
 	const switchSelected = (e) => {
@@ -62,41 +61,27 @@ const RecordRow = ({ data, title }) => {
 		});
 	};
 
-	const playerRecords = {
-		Player: data.highestPlayerScores,
-		Quarterback: data.highestQbScores,
-		Runningback: data.highestRbScores,
-		'Wide Receiver': data.highestWrScores,
-		'Tight End': data.highestTEScores
-	};
+	// const playerRecords = {
+	// 	Player: data.highestPlayerScores,
+	// 	Quarterback: data.highestQbScores,
+	// 	Runningback: data.highestRbScores,
+	// 	'Wide Receiver': data.highestWrScores,
+	// 	'Tight End': data.highestTEScores
+	// };
 
 	return (
 		<Div selected={selected}>
 			<div className="rowHeader">
-				<h3 onClick={(e) => switchSelected(e)} className={selected.selected === 'Player' ? 'active' : ''}>
-					Player
-				</h3>
-				<h3 onClick={(e) => switchSelected(e)} className={selected.selected === 'Quarterback' ? 'active' : ''}>
-					Quarterback
-				</h3>
-				<h3 onClick={(e) => switchSelected(e)} className={selected.selected === 'Runningback' ? 'active' : ''}>
-					Runningback
-				</h3>
-				<h3
-					onClick={(e) => switchSelected(e)}
-					className={selected.selected === 'Wide Receiver' ? 'active' : ''}
-				>
-					Wide Receiver
-				</h3>
-				<h3 onClick={(e) => switchSelected(e)} className={selected.selected === 'Tight End' ? 'active' : ''}>
-					Tight End
-				</h3>
+				{data.tabTitles.map((title) => {
+					return (
+						<h3 onClick={(e) => switchSelected(e)} className={selected.selected === title ? 'active' : ''}>
+							{title}
+						</h3>
+					);
+				})}
 			</div>
 			<div className="rowBody">
-				<RecordUnit
-					data={playerRecords[selected.selected]}
-					title={`Highest Weekly ${selected.selected} Scores`}
-				/>
+				<RecordUnit data={data.records[selected.selected]} title={data.unitTitle + selected.selected} />
 			</div>
 		</Div>
 	);
