@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 
 //styles
 import statbookTeamStyles from './statbookTeam.module.scss';
@@ -26,7 +25,7 @@ const Div = styled.div`
 	}
 
 	.teamDrawer {
-		display: ${(props) => (props.drawerState.isOpen ? 'block' : 'none')};
+		display: ${(props) => (props.drawerState.isOpen ? 'grid' : 'none')};
 		width: 100%;
 		height: 100%;
 		background: ${(props) => props.secondaryColor};
@@ -71,7 +70,18 @@ const StatbookTeam = ({ team }) => {
 				</div>
 			</div>
 			<div className="teamDrawer">
-				<p>ALoha!</p>
+				<div>
+					<h3>Best Season</h3>
+					<p>
+						{team.bestSeason.record} - {team.bestSeason.year}
+					</p>
+				</div>
+				<div>
+					<h3>Worst Season</h3>
+					<p>
+						{team.worstSeason.record} - {team.worstSeason.year}
+					</p>
+				</div>
 			</div>
 		</Div>
 	);

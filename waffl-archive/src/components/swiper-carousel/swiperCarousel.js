@@ -29,13 +29,13 @@ const SwiperCarousel = () => {
 				<div className={swiperStyles.swiperItem}>
 					<img alt="Jamaal Charles" src={hofImages.JamaalCharles} />
 				</div>
-				<div>
+				<div className={swiperStyles.swiperItem}>
 					<img alt="Matt Forte" src={hofImages.MattForte} />
 				</div>
-				<div>
+				<div className={swiperStyles.swiperItem}>
 					<img alt="Rob Gronkowski" src={hofImages.RobGronkowski} />
 				</div>
-				<div>
+				<div className={swiperStyles.swiperItem}>
 					<img alt="Demarco Murray" src={hofImages.DemarcoMurray} />
 				</div>
 			</Swiper>
