@@ -11,6 +11,9 @@ const Div = styled.div`
 	width: 80vw;
 	display: flex;
 	flex-direction: row;
+	background: #424242;
+
+	padding: 1rem;
 
 	.round {
 		width: 33%;

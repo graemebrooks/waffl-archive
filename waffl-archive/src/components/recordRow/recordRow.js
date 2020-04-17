@@ -61,14 +61,6 @@ const RecordRow = ({ data, title }) => {
 		});
 	};
 
-	// const playerRecords = {
-	// 	Player: data.highestPlayerScores,
-	// 	Quarterback: data.highestQbScores,
-	// 	Runningback: data.highestRbScores,
-	// 	'Wide Receiver': data.highestWrScores,
-	// 	'Tight End': data.highestTEScores
-	// };
-
 	return (
 		<Div selected={selected}>
 			<div className="rowHeader">
