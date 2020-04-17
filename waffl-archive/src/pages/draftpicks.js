@@ -23,7 +23,7 @@ const Div = styled.div`
 const DraftpicksPage = () => {
 	const [ data, setData ] = useState(); // draft data
 	useEffect(() => {
-		fetch(`http://waffl-archive-api.herokuapp.com/index/draftData/2014`)
+		fetch(`https://waffl-archive-api.herokuapp.com/index/draftData/2014`)
 			.then((x) => x.json())
 			.then((x) => setData(x));
 	}, []);

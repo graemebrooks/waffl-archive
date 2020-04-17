@@ -11,7 +11,7 @@ import statbookPageStyles from './statbookPage.module.scss';
 const StatbookPage = () => {
 	const [ data, setData ] = useState(); // team data
 	useEffect(() => {
-		fetch(`http://waffl-archive-api.herokuapp.com/index/statsheet`).then((x) => x.json()).then((x) => setData(x));
+		fetch(`https://waffl-archive-api.herokuapp.com/index/statsheet`).then((x) => x.json()).then((x) => setData(x));
 	}, []);
 
 	if (!data) {

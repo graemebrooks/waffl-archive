@@ -11,7 +11,7 @@ import recordbookPageStyles from './recordbookPage.module.scss';
 const RecordbookPage = () => {
 	const [ data, setData ] = useState(); // player record data
 	useEffect(() => {
-		fetch(`http://waffl-archive-api.herokuapp.com/index/playerRecords`)
+		fetch(`https://waffl-archive-api.herokuapp.com/index/playerRecords`)
 			.then((x) => x.json())
 			.then((x) => setData(x));
 	}, []);
@@ -53,7 +53,7 @@ const RecordbookPage = () => {
 			<Layout>
 				<h1>WAFFL Recordbook</h1>
 				<h2 className={recordbookPageStyles.recordType}>Player Records</h2>
-				<RecordRow data={formattedData.weeklyRecords} /> 
+				<RecordRow data={formattedData.weeklyRecords} />
 				<RecordRow data={formattedData.seasonRecords} />
 			</Layout>
 		);
