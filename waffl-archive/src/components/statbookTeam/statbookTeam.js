@@ -16,21 +16,22 @@ const Div = styled.div`
 		width: 100%;
 		height: 100%;
 		display: flex;
-		border: solid 3px white;
+		border: solid 4px white;
 		background: ${(props) => props.primaryColor};
 		:hover {
-			border: 3px solid ${(props) => props.secondaryColor};
+			border: 4px solid ${(props) => props.secondaryColor};
 		}
 		margin: 0;
 	}
 
 	.teamDrawer {
-		display: ${(props) => (props.drawerState.isOpen ? 'grid' : 'none')};
+		display: ${(props) => (props.drawerState.isOpen ? 'flex' : 'none')};
 		width: 100%;
 		height: 100%;
 		background: ${(props) => props.secondaryColor};
 		color: black;
 		margin: 0;
+		justify-content: space-between;
 	}
 `;
 
@@ -75,12 +76,18 @@ const StatbookTeam = ({ team }) => {
 					<p>
 						{team.bestSeason.record} - {team.bestSeason.year}
 					</p>
-				</div>
-				<div>
 					<h3>Worst Season</h3>
 					<p>
 						{team.worstSeason.record} - {team.worstSeason.year}
 					</p>
+				</div>
+				<div>
+					<h2>Winning Seasons - {team.Seasons.winning}</h2>
+					<h2>Losing Seasons - {team.Seasons.losing}</h2>
+				</div>
+				<div>
+					<h3>Longest Win Streak: {team.longestWinStreak}</h3>
+					<h3>Longest Loss Streak: {team.longestLossStreak}</h3>
 				</div>
 			</div>
 		</Div>

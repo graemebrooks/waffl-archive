@@ -1,18 +1,80 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
+import styled from 'styled-components';
 
+// components
+import Spinner from '../components/spinner/spinner';
 import Layout from '../components/layout/layout';
 
+// styles
+const Div = styled.div`
+	width: 80vw;
+	display: flex;
+	flex-direction: row;
+
+	.round {
+		width: 33%;
+	}
+`;
+
 const DraftpicksPage = () => {
-	return (
-		<Layout>
-			<h1>WAFFL Draft Pick Tracker</h1>
-			<p>This is a demo application for the purpose of learning GatsbyJS</p>
-			<p>
-				For any questions, feel free to <Link to="/contact">contact me</Link>
-			</p>
-		</Layout>
-	);
+	const [ data, setData ] = useState(); // draft data
+	useEffect(() => {
+		fetch(`http://waffl-archive-api.herokuapp.com/index/draftData/2014`)
+			.then((x) => x.json())
+			.then((x) => setData(x));
+	}, []);
+
+	if (!data) {
+		return (
+			<Layout>
+				<h1>WAFFL Draft Pick Tracker</h1>
+				<Spinner />
+			</Layout>
+		);
+	} else {
+		return (
+			<Layout>
+				<h1>WAFFL Draft Pick Tracker</h1>
+				<h2>2014 Draft</h2>
+				<Div className="draft-2014">
+					<div className="round">
+						<ol>
+							{data.firstRound.map((selection) => {
+								return (
+									<li>
+										{selection.player} - {selection.owner}
+									</li>
+								);
+							})}
+						</ol>
+					</div>
+					<div className="round">
+						<ol>
+							{data.secondRound.map((selection) => {
+								return (
+									<li>
+										{selection.player} - {selection.owner}
+									</li>
+								);
+							})}
+						</ol>
+					</div>
+					<div className="round">
+						<ol>
+							{data.thirdRound.map((selection) => {
+								return (
+									<li>
+										{selection.player} - {selection.owner}
+									</li>
+								);
+							})}
+						</ol>
+					</div>
+				</Div>
+			</Layout>
+		);
+	}
 };
 
 export default DraftpicksPage;
