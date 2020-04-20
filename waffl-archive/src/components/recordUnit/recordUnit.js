@@ -7,7 +7,7 @@ const Div = styled.div`
 	padding: 1rem;
 
 	span {
-		color: orange;
+		color: #17b978;
 		font-weight: bold;
 		font-size: 1.2rem;
 	}

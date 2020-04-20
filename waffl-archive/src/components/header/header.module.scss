@@ -1,5 +1,5 @@
 .header {
-	background: rgb(0, 110, 255);
+	background: #2d4059;
 	height: 6vh;
 	display: flex;
 	align-items: center;
@@ -31,7 +31,7 @@
 	}
 
 	li:hover {
-		background: rgb(62, 146, 255);
+		background: #39506e;
 	}
 }
 
@@ -47,5 +47,5 @@
 }
 
 .active-nav-item {
-	border-bottom: .2rem solid rgb(255, 0, 76);
+	border-bottom: .2rem solid #17b978;
 }

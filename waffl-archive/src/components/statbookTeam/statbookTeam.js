@@ -17,7 +17,7 @@ const Div = styled.div`
 		width: 100%;
 		height: 100%;
 		display: flex;
-		border: solid 4px white;
+		border: solid 4px #2d4059;
 		background: ${(props) => props.primaryColor};
 		:hover {
 			border: 4px solid ${(props) => props.secondaryColor};

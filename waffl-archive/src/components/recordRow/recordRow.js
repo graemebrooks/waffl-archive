@@ -35,17 +35,17 @@ const Div = styled.div`
 			width: 20%;
 			height: 100%;
 			margin: 0;
-			background: orange;
+			background: #213642;
 		}
 
 		.active {
-			background: rgb(0, 110, 255);
+			background: #17b978;
 		}
 	}
 
 	.rowBody {
 		color: white;
-		background: #424242;
+		background: #2d4059;
 	}
 `;
 

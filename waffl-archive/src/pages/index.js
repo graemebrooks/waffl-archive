@@ -19,7 +19,7 @@ const Div = styled.div`
 	align-items: center;
 
 	h2 {
-		color: orange;
+		color: #17b978;
 	}
 
 	.logoBox {
@@ -30,9 +30,8 @@ const Div = styled.div`
 
 		padding: 1.5rem;
 
-		border: 5px solid rgb(0, 110, 255);
 		border-radius: .5rem;
-		background: rgba(0, 110, 255, 0.3);
+		background: #2d4059;
 
 		h1 {
 			padding: 1rem;
