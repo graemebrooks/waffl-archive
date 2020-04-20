@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 //styles
 import statbookTeamStyles from './statbookTeam.module.scss';
@@ -25,9 +26,9 @@ const Div = styled.div`
 	}
 
 	.teamDrawer {
-		display: ${(props) => (props.drawerState.isOpen ? 'flex' : 'none')};
+		display: none;
 		width: 100%;
-		height: 100%;
+		height: 0%;
 		background: ${(props) => props.secondaryColor};
 		color: black;
 		margin: 0;
@@ -42,6 +43,8 @@ const StatbookTeam = ({ team }) => {
 		setTeamDrawerState({ isOpen: !teamDrawerState.isOpen });
 	};
 
+	// framer motion
+
 	return (
 		<Div
 			className={statbookTeamStyles.teamCard}
@@ -50,7 +53,7 @@ const StatbookTeam = ({ team }) => {
 			drawerState={teamDrawerState}
 			onClick={toggleDrawer}
 		>
-			<div className="teamHeader">
+			<motion.div className="teamHeader" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
 				<h1>{team.teamName}</h1>
 				<img src={team.logoUrl} className={statbookTeamStyles.logo} alt={`Logo for ${team.teamName}`} />
 				<div>
@@ -69,8 +72,19 @@ const StatbookTeam = ({ team }) => {
 						{team.highestScoringGame.score} - {team.highestScoringGame.week}
 					</p>
 				</div>
-			</div>
-			<div className="teamDrawer">
+			</motion.div>
+			<motion.div
+				className="teamDrawer"
+				initial={{
+					height: teamDrawerState.isOpen ? '100%' : '0%',
+					display: teamDrawerState.isOpen ? 'flex' : 'none'
+				}}
+				animate={{
+					height: teamDrawerState.isOpen ? '100%' : '0%',
+					display: teamDrawerState.isOpen ? 'flex' : 'none'
+				}}
+				transition={{ duration: 2, ease: 'easeOut' }}
+			>
 				<div>
 					<h3>Best Season</h3>
 					<p>
@@ -89,7 +103,7 @@ const StatbookTeam = ({ team }) => {
 					<h3>Longest Win Streak: {team.longestWinStreak}</h3>
 					<h3>Longest Loss Streak: {team.longestLossStreak}</h3>
 				</div>
-			</div>
+			</motion.div>
 		</Div>
 	);
 };

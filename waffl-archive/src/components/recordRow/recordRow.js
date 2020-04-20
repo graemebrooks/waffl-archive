@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 // components
 import RecordUnit from '../recordUnit/recordUnit';
@@ -66,9 +67,12 @@ const RecordRow = ({ data, title }) => {
 			<div className="rowHeader">
 				{data.tabTitles.map((title) => {
 					return (
-						<h3 onClick={(e) => switchSelected(e)} className={selected.selected === title ? 'active' : ''}>
+						<motion.h3
+							onClick={(e) => switchSelected(e)}
+							className={selected.selected === title ? 'active' : ''}
+						>
 							{title}
-						</h3>
+						</motion.h3>
 					);
 				})}
 			</div>
