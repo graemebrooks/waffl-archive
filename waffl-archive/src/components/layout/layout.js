@@ -25,7 +25,13 @@ const Layout = (props) => {
 						content: 'football, fantasy'
 					}
 				]}
-				link={[ { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${favicon}` } ]}
+				link={[
+					{ rel: 'icon', type: 'image/png', sizes: '32x32', href: `${favicon}` },
+					{
+						rel: 'stylesheet',
+						href: '"https://fonts.googleapis.com/css2?family=Cairo&family=PT+Mono&display=swap"'
+					}
+				]}
 			/>
 			<Header />
 			<div className={layoutStyles.container}>

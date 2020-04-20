@@ -3,13 +3,23 @@ import styled from 'styled-components';
 
 //styles
 const Div = styled.div`
-	width: 35vw;
+	width: 50vw;
 	padding: 1rem;
+
+	font-family: 'PT Mono', monospace;
 
 	span {
 		color: #17b978;
 		font-weight: bold;
 		font-size: 1.2rem;
+	}
+
+	p {
+		padding: .25rem;
+	}
+
+	p:hover {
+		background: #213642;
 	}
 `;
 

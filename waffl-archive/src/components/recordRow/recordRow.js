@@ -36,6 +36,8 @@ const Div = styled.div`
 			height: 100%;
 			margin: 0;
 			background: #213642;
+
+			font-family: 'Source Sans Pro', sans-serif;
 		}
 
 		.active {

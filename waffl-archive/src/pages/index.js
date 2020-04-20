@@ -32,13 +32,6 @@ const Div = styled.div`
 
 		border-radius: .5rem;
 		background: #2d4059;
-
-		h1 {
-			padding: 1rem;
-			font-size: 5rem;
-			align-content: center;
-			justify-content: center;
-		}
 	}
 
 	.introText {
