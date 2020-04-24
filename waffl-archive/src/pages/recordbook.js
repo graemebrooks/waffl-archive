@@ -11,7 +11,7 @@ import recordbookPageStyles from './recordbookPage.module.scss';
 const RecordbookPage = () => {
 	const [ data, setData ] = useState(); // player record data
 	useEffect(() => {
-		fetch(`https://ec2-3-15-165-210.us-east-2.compute.amazonaws.com/index/playerRecords`)
+		fetch(`https://waffl-archive-api.com/index/playerRecords`)
 			.then((x) => x.json())
 			.then((x) => setData(x));
 	}, []);

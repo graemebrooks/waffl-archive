@@ -23,9 +23,7 @@ const Div = styled.div`
 const DraftpicksPage = () => {
 	const [ data, setData ] = useState(); // draft data
 	useEffect(() => {
-		fetch(`https://ec2-3-15-165-210.us-east-2.compute.amazonaws.com/index/draftData/2014`)
-			.then((x) => x.json())
-			.then((x) => setData(x));
+		fetch(`https://waffl-archive-api.com//index/draftData/2014`).then((x) => x.json()).then((x) => setData(x));
 	}, []);
 
 	if (!data) {
