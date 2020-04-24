@@ -1,3 +1,32 @@
-.logo {
-	height: 400px;
+.content {
+	height: 90vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h2 {
+		color: #17b978;
+	}
+
+	img {
+		height: 400px;
+	}
+
+	.logoBox {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		padding: 1.5rem;
+
+		border-radius: .5rem;
+		background: #2d4059;
+	}
+
+	.introText {
+		width: 60vw;
+	}
 }
