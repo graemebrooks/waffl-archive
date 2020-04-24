@@ -53,7 +53,7 @@ const StatbookTeam = ({ team }) => {
 			drawerState={teamDrawerState}
 			onClick={toggleDrawer}
 		>
-			<motion.div className="teamHeader" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+			<motion.div className="teamHeader" whileTap={{ scale: 0.95 }}>
 				<h1>{team.teamName}</h1>
 				<img src={team.logoUrl} className={statbookTeamStyles.logo} alt={`Logo for ${team.teamName}`} />
 				<div>

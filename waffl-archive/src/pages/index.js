@@ -9,7 +9,7 @@ import Layout from '../components/layout/layout';
 import wafflLogo from '../../static/waffl-logos/wafflArchive.png';
 
 // styles
-import indexStyles from './indexPage.module.scss';
+// import indexStyles from './indexPage.module.scss';
 const Div = styled.div`
 	height: 90vh;
 	width: 100vw;
@@ -20,6 +20,10 @@ const Div = styled.div`
 
 	h2 {
 		color: #17b978;
+	}
+
+	img {
+		height: 400px;
 	}
 
 	.logoBox {
@@ -42,8 +46,8 @@ const Div = styled.div`
 export default () => (
 	<Layout>
 		<Div>
-			<motion.div className="logoBox" animate={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-				<img src={wafflLogo} className={indexStyles.logo} alt="WAFFL Logo" />
+			<motion.div className="logoBox">
+				<img src={wafflLogo} alt="WAFFL Logo" />
 				<h2>The digital home of the Westwood Affiliated Fantasy Football League</h2>
 				<p className="introText">
 					The Westwood Affiliated Fantasy Football League or "WAFFL" was founded in 2013. It's founding
