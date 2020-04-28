@@ -10,16 +10,12 @@ import DraftYear from '../components/draftYear/draftYear';
 
 // styles
 const Div = styled.div`
-	width: 80vw;
+	width: 70vw;
 	display: flex;
 	flex-direction: row;
 	background: #424242;
 
 	padding: 1rem;
-
-	.round {
-		width: 33%;
-	}
 `;
 
 function getThemes(team, colors, logos) {
@@ -74,16 +70,22 @@ function getThemes(team, colors, logos) {
 }
 
 const DraftpicksPage = () => {
-	const [ data, setData ] = useState(); // draft data
+	const [ data2014, setData2014 ] = useState(); // 2014 draft data
+	const [ data2015, setData2015 ] = useState(); // 2015 draft data
+	const [ data2016, setData2016 ] = useState(); // 2016 draft data
+	const [ data2017, setData2017 ] = useState(); // 2017 draft data
 	const [ colors, setColors ] = useState(); // team colors
 	const [ logos, setLogos ] = useState(); // team logo
 	useEffect(() => {
-		fetch(`https://waffl-archive-api.com/index/draftData/2014`).then((x) => x.json()).then((x) => setData(x));
+		fetch(`https://waffl-archive-api.com/index/draftData/2014`).then((x) => x.json()).then((x) => setData2014(x));
+		fetch(`https://waffl-archive-api.com/index/draftData/2015`).then((x) => x.json()).then((x) => setData2015(x));
+		fetch(`https://waffl-archive-api.com/index/draftData/2016`).then((x) => x.json()).then((x) => setData2016(x));
+		fetch(`https://waffl-archive-api.com/index/draftData/2017`).then((x) => x.json()).then((x) => setData2017(x));
 		fetch(`https://waffl-archive-api.com/index/colors`).then((x) => x.json()).then((x) => setColors(x));
 		fetch(`https://waffl-archive-api.com/index/logos`).then((x) => x.json()).then((x) => setLogos(x));
 	}, []);
 
-	if (!data || !colors || !logos) {
+	if (!data2014 || !colors || !logos) {
 		return (
 			<Layout>
 				<h1>WAFFL Draft Pick Tracker</h1>
@@ -95,13 +97,38 @@ const DraftpicksPage = () => {
 		return (
 			<Layout>
 				<h1>WAFFL Draft Pick Tracker</h1>
+				{/* <Div>'Aloha'</Div> */}
 				<DraftYear
 					title="2014"
 					tabData={tabData}
 					colors={colors}
 					logos={logos}
 					getThemes={getThemes}
-					data={data}
+					data={data2014}
+				/>
+				<DraftYear
+					title="2015"
+					tabData={tabData}
+					colors={colors}
+					logos={logos}
+					getThemes={getThemes}
+					data={data2015}
+				/>
+				<DraftYear
+					title="2016"
+					tabData={tabData}
+					colors={colors}
+					logos={logos}
+					getThemes={getThemes}
+					data={data2016}
+				/>
+				<DraftYear
+					title="2017"
+					tabData={tabData}
+					colors={colors}
+					logos={logos}
+					getThemes={getThemes}
+					data={data2017}
 				/>
 			</Layout>
 		);

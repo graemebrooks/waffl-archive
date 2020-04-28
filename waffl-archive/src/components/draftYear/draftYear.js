@@ -7,7 +7,7 @@ import DraftRound from '../draftRound/draftRound';
 
 // styles
 const Div = styled.div`
-	width: 90vw;
+	width: 70vw;
 	padding: .5rem;
 
 	display: flex;

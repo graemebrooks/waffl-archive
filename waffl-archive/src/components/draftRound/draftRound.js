@@ -8,6 +8,7 @@ import DraftSelection from '../draftSelection/draftSelection';
 const Div = styled.div`
 	width: 50vw;
 	padding: 1rem;
+	margin: 0 auto;
 
 	font-family: 'PT Mono', monospace;
 
