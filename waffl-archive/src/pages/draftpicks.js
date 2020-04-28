@@ -5,7 +5,6 @@ import styled from 'styled-components';
 // components
 import Spinner from '../components/spinner/spinner';
 import Layout from '../components/layout/layout';
-import DraftSelection from '../components/draftSelection/draftSelection';
 import DraftYear from '../components/draftYear/draftYear';
 
 // styles
@@ -13,9 +12,26 @@ const Div = styled.div`
 	width: 70vw;
 	display: flex;
 	flex-direction: row;
-	background: #424242;
+	cursor: pointer;
 
-	padding: 1rem;
+	padding: 0.5rem;
+
+	h3 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+		width: 33.3%;
+		height: 100%;
+		margin: 0;
+		background: #213642;
+
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+
+	.active {
+		background: #17b978;
+	}
 `;
 
 function getThemes(team, colors, logos) {
@@ -76,6 +92,33 @@ const DraftpicksPage = () => {
 	const [ data2017, setData2017 ] = useState(); // 2017 draft data
 	const [ colors, setColors ] = useState(); // team colors
 	const [ logos, setLogos ] = useState(); // team logo
+
+	const [ selected, setSelected ] = useState({
+		selected: '2014'
+	});
+	const [ selectedData, setSelectedData ] = useState({});
+
+	const switchDraft = (e) => {
+		e.persist();
+		setSelected({
+			selected: e.target.innerHTML
+		});
+		switch (e.target.innerHTML) {
+			case '2014':
+				setSelectedData(data2014);
+				break;
+			case '2015':
+				setSelectedData(data2015);
+				break;
+			case '2016':
+				setSelectedData(data2016);
+				break;
+			case '2017':
+				setSelectedData(data2017);
+				break;
+		}
+	};
+
 	useEffect(() => {
 		fetch(`https://waffl-archive-api.com/index/draftData/2014`).then((x) => x.json()).then((x) => setData2014(x));
 		fetch(`https://waffl-archive-api.com/index/draftData/2015`).then((x) => x.json()).then((x) => setData2015(x));
@@ -83,9 +126,10 @@ const DraftpicksPage = () => {
 		fetch(`https://waffl-archive-api.com/index/draftData/2017`).then((x) => x.json()).then((x) => setData2017(x));
 		fetch(`https://waffl-archive-api.com/index/colors`).then((x) => x.json()).then((x) => setColors(x));
 		fetch(`https://waffl-archive-api.com/index/logos`).then((x) => x.json()).then((x) => setLogos(x));
+		setSelectedData(data2014);
 	}, []);
 
-	if (!data2014 || !colors || !logos) {
+	if (!data2014 || !data2015 || !data2016 || !data2017 || !colors || !logos) {
 		return (
 			<Layout>
 				<h1>WAFFL Draft Pick Tracker</h1>
@@ -97,38 +141,27 @@ const DraftpicksPage = () => {
 		return (
 			<Layout>
 				<h1>WAFFL Draft Pick Tracker</h1>
-				{/* <Div>'Aloha'</Div> */}
+				<Div>
+					<h3 className={selected.selected === '2014' ? 'active' : ''} onClick={(e) => switchDraft(e)}>
+						2014
+					</h3>
+					<h3 className={selected.selected === '2015' ? 'active' : ''} onClick={(e) => switchDraft(e)}>
+						2015
+					</h3>
+					<h3 className={selected.selected === '2016' ? 'active' : ''} onClick={(e) => switchDraft(e)}>
+						2016
+					</h3>
+					<h3 className={selected.selected === '2017' ? 'active' : ''} onClick={(e) => switchDraft(e)}>
+						2017
+					</h3>
+				</Div>
 				<DraftYear
-					title="2014"
+					title={selected.selected}
 					tabData={tabData}
 					colors={colors}
 					logos={logos}
 					getThemes={getThemes}
-					data={data2014}
-				/>
-				<DraftYear
-					title="2015"
-					tabData={tabData}
-					colors={colors}
-					logos={logos}
-					getThemes={getThemes}
-					data={data2015}
-				/>
-				<DraftYear
-					title="2016"
-					tabData={tabData}
-					colors={colors}
-					logos={logos}
-					getThemes={getThemes}
-					data={data2016}
-				/>
-				<DraftYear
-					title="2017"
-					tabData={tabData}
-					colors={colors}
-					logos={logos}
-					getThemes={getThemes}
-					data={data2017}
+					data={selectedData}
 				/>
 			</Layout>
 		);

@@ -84,7 +84,6 @@ const DraftYear = ({ tabData, title, data, colors, logos, getThemes }) => {
 
 	return (
 		<Div selected={selected}>
-			<h2>{title}</h2>
 			<div className="rowHeader">
 				{tabData.tabTitles.map((title) => {
 					return (
