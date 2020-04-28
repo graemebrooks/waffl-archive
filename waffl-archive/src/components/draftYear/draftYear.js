@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 // components
-import RecordUnit from '../recordUnit/recordUnit';
+import DraftRound from '../draftRound/draftRound';
 
 // styles
 const Div = styled.div`
@@ -21,7 +21,6 @@ const Div = styled.div`
 	.rowHeader {
 		width: 100%
 		height: 100%;
-		background: red;
 
 		display: flex;
 		flex-direction: row;
@@ -34,7 +33,7 @@ const Div = styled.div`
 			align-items: center;
 			justify-content: center;
 			padding: 1rem;
-			width: 20%;
+			width: 33.3%;
 			height: 100%;
 			margin: 0;
 			background: #213642;
@@ -53,23 +52,41 @@ const Div = styled.div`
 	}
 `;
 
-const RecordRow = ({ data, title }) => {
+function formatRound(inputRound) {
+	let result = '';
+	switch (inputRound) {
+		case 'First Round':
+			result = 'firstRound';
+			break;
+		case 'Second Round':
+			result = 'secondRound';
+			break;
+		case 'Third Round':
+			result = 'thirdRound';
+			break;
+	}
+	return result;
+}
+
+const DraftYear = ({ tabData, title, data, colors, logos, getThemes }) => {
 	const [ selected, setSelected ] = useState({
-		selected: data.tabTitles[0]
+		selected: tabData.tabTitles[0],
+		formattedRound: formatRound(tabData.tabTitles[0])
 	});
 
 	const switchSelected = (e) => {
 		e.persist();
-		console.log(e.target.innerHTML);
 		setSelected({
-			selected: e.target.innerHTML
+			selected: e.target.innerHTML,
+			formattedRound: formatRound(e.target.innerHTML)
 		});
 	};
 
 	return (
 		<Div selected={selected}>
+			<h2>{title}</h2>
 			<div className="rowHeader">
-				{data.tabTitles.map((title) => {
+				{tabData.tabTitles.map((title) => {
 					return (
 						<motion.h3
 							onClick={(e) => switchSelected(e)}
@@ -81,10 +98,16 @@ const RecordRow = ({ data, title }) => {
 				})}
 			</div>
 			<div className="rowBody">
-				<RecordUnit data={data.records[selected.selected]} title={data.unitTitle + selected.selected} />
+				<DraftRound
+					data={data}
+					colors={colors}
+					logos={logos}
+					getThemes={getThemes}
+					round={selected.formattedRound}
+				/>
 			</div>
 		</Div>
 	);
 };
 
-export default RecordRow;
+export default DraftYear;
