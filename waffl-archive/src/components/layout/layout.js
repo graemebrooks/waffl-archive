@@ -30,7 +30,8 @@ const Layout = (props) => {
 					{
 						rel: 'stylesheet',
 						href: 'https://fonts.googleapis.com/css2?family=Cairo&family=PT+Mono&display=swap'
-					}
+					},
+					{}
 				]}
 			/>
 			<Header />

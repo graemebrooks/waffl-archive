@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 // components
@@ -10,38 +9,6 @@ import wafflLogo from '../../static/waffl-logos/wafflArchive.png';
 
 // styles
 import indexStyles from './indexPage.module.scss';
-// const Div = styled.div`
-// 	height: 90vh;
-// 	width: 100vw;
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: center;
-// 	align-items: center;
-
-// 	h2 {
-// 		color: #17b978;
-// 	}
-
-// 	img {
-// 		height: 400px;
-// 	}
-
-// 	.logoBox {
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: center;
-// 		align-items: center;
-
-// 		padding: 1.5rem;
-
-// 		border-radius: .5rem;
-// 		background: #2d4059;
-// 	}
-
-// 	.introText {
-// 		width: 60vw;
-// 	}
-// `;
 
 export default () => (
 	<Layout>

@@ -34,6 +34,24 @@ const Div = styled.div`
 		margin: 0;
 		justify-content: space-between;
 	}
+
+	@media (max-width: 480px) {
+		.teamHeader {
+			max-width: 80vw;
+			display: flex;
+			flex-direction: column;
+
+			img {
+				width: 8rem;
+			}
+		}
+
+		.teamDrawer {
+			max-width: 80vw;
+			display: flex;
+			flex-direction: column;
+		}
+	}
 `;
 
 const StatbookTeam = ({ team }) => {

@@ -119,17 +119,30 @@ const DraftpicksPage = () => {
 		}
 	};
 
-	useEffect(() => {
-		fetch(`https://waffl-archive-api.com/index/draftData/2014`).then((x) => x.json()).then((x) => setData2014(x));
-		fetch(`https://waffl-archive-api.com/index/draftData/2015`).then((x) => x.json()).then((x) => setData2015(x));
-		fetch(`https://waffl-archive-api.com/index/draftData/2016`).then((x) => x.json()).then((x) => setData2016(x));
-		fetch(`https://waffl-archive-api.com/index/draftData/2017`).then((x) => x.json()).then((x) => setData2017(x));
-		fetch(`https://waffl-archive-api.com/index/colors`).then((x) => x.json()).then((x) => setColors(x));
-		fetch(`https://waffl-archive-api.com/index/logos`).then((x) => x.json()).then((x) => setLogos(x));
-		setSelectedData(data2014);
-	}, []);
+	useEffect(
+		() => {
+			if (!data2014 || !data2015 || !data2016 || !data2017 || !colors || !logos || !selectedData) {
+				fetch(`https://waffl-archive-api.com/index/draftData/2014`)
+					.then((x) => x.json())
+					.then((x) => setData2014(x))
+					.then(setSelectedData(data2014));
+				fetch(`https://waffl-archive-api.com/index/draftData/2015`)
+					.then((x) => x.json())
+					.then((x) => setData2015(x));
+				fetch(`https://waffl-archive-api.com/index/draftData/2016`)
+					.then((x) => x.json())
+					.then((x) => setData2016(x));
+				fetch(`https://waffl-archive-api.com/index/draftData/2017`)
+					.then((x) => x.json())
+					.then((x) => setData2017(x));
+				fetch(`https://waffl-archive-api.com/index/colors`).then((x) => x.json()).then((x) => setColors(x));
+				fetch(`https://waffl-archive-api.com/index/logos`).then((x) => x.json()).then((x) => setLogos(x));
+			}
+		},
+		[ data2014 ]
+	);
 
-	if (!data2014 || !data2015 || !data2016 || !data2017 || !colors || !logos) {
+	if (!data2014 || !data2015 || !data2016 || !data2017 || !colors || !logos || !selectedData) {
 		return (
 			<Layout>
 				<h1>WAFFL Draft Pick Tracker</h1>

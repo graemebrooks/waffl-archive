@@ -49,3 +49,24 @@
 .active-nav-item {
 	border-bottom: .2rem solid #17b978;
 }
+
+$breakpoint-mobile: 480px;
+@media (max-width: $breakpoint-mobile) {
+	.header {
+		height: 36vh;
+
+		li {
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	.nav-list {
+		display: flex;
+		flex-direction: column;
+	}
+}

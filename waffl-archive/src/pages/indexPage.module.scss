@@ -5,13 +5,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	flex-grow: 1;
 
 	h2 {
 		color: #17b978;
-	}
-
-	img {
-		height: 400px;
 	}
 
 	.logoBox {
@@ -19,14 +16,26 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		max-width: 65vw;
 
 		padding: 1.5rem;
 
 		border-radius: .5rem;
 		background: #2d4059;
+
+		img {
+			max-height: 20rem;
+		}
 	}
 
 	.introText {
 		width: 60vw;
 	}
+}
+
+$breakpoint-mobile: 480px;
+@media (max-width: $breakpoint-mobile) {
+	// .content {
+	// 	background: rgb(71, 24, 24);
+	// }
 }
