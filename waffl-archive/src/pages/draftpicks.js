@@ -96,27 +96,31 @@ const DraftpicksPage = () => {
 	const [ selected, setSelected ] = useState({
 		selected: '2014'
 	});
-	const [ selectedData, setSelectedData ] = useState({});
+
+	const getSelectedData = (s) => {
+		let result = 2014;
+		switch (s) {
+			case '2014':
+				result = data2014;
+				break;
+			case '2015':
+				result = data2015;
+				break;
+			case '2016':
+				result = data2016;
+				break;
+			case '2017':
+				result = data2017;
+				break;
+		}
+		return result;
+	};
 
 	const switchDraft = (e) => {
 		e.persist();
 		setSelected({
 			selected: e.target.innerHTML
 		});
-		switch (e.target.innerHTML) {
-			case '2014':
-				setSelectedData(data2014);
-				break;
-			case '2015':
-				setSelectedData(data2015);
-				break;
-			case '2016':
-				setSelectedData(data2016);
-				break;
-			case '2017':
-				setSelectedData(data2017);
-				break;
-		}
 	};
 
 	useEffect(() => {
@@ -160,7 +164,7 @@ const DraftpicksPage = () => {
 					colors={colors}
 					logos={logos}
 					getThemes={getThemes}
-					data={data2014}
+					data={getSelectedData(selected.selected)}
 				/>
 			</Layout>
 		);
