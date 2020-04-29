@@ -139,7 +139,7 @@ const DraftpicksPage = () => {
 				fetch(`https://waffl-archive-api.com/index/logos`).then((x) => x.json()).then((x) => setLogos(x));
 			}
 		},
-		[ data2014 ]
+		[ data2014, data2015, data2016, data2017, colors, logos, selectedData ]
 	);
 
 	if (!data2014 || !data2015 || !data2016 || !data2017 || !colors || !logos || !selectedData) {

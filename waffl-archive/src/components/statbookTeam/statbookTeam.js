@@ -35,7 +35,7 @@ const Div = styled.div`
 		justify-content: space-between;
 	}
 
-	@media (max-width: 480px) {
+	@media (max-width: 700px) {
 		.teamHeader {
 			max-width: 80vw;
 			display: flex;
