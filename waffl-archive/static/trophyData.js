@@ -5,7 +5,7 @@ const trophyData = {
 			team: 'West Lubbock Ice Babies',
 			logoUrl: 'https://i.imgur.com/KE0cDMD.png',
 			content:
-				'The first season in WAFFL saw an undefeated campaign, the first I have personally ever seen or heard about in any league. The Ice Babies went a perfect 14-0 in the regular season and had little resistance in the playoffs. The star studded lineup was highlighted bythe record shattering season from Peyton Manning who scored 446 points in 2013, by far the most of any QB. The Ice Babies also owned the number one WR in Josh Gordon who missed the first two games with a suspension. Star WR Julio Jones also missed the whole season past Week 5. The star-studded championship lineup included: QB Peyton Manning (1st)... RB LeSean McCoy (2nd)... RB Matt Forte (3rd)... WR Josh Gordon (1st)... WR Dez Bryant (7th)... WR Larry Fitzgerald (17th)... TE Jordan Cameron (5th)... The Ice Babies scored 2115 points in 2013, 1st in the league.'
+				'The first season in WAFFL saw an undefeated campaign, the first I have personally ever seen or heard about in any league. The Ice Babies went a perfect 14-0 in the regular season and had little resistance in the playoffs. The star studded lineup was highlighted by the record shattering season from Peyton Manning who scored 446 points in 2013, by far the most of any QB. The Ice Babies also owned the number one WR in Josh Gordon who missed the first two games with a suspension. Star WR Julio Jones also missed the whole season past Week 5. The star-studded championship lineup included: QB Peyton Manning (1st)... RB LeSean McCoy (2nd)... RB Matt Forte (3rd)... WR Josh Gordon (1st)... WR Dez Bryant (7th)... WR Larry Fitzgerald (17th)... TE Jordan Cameron (5th)... The Ice Babies scored 2115 points in 2013, 1st in the league.'
 		},
 		{
 			year: '2014',
@@ -19,7 +19,7 @@ const trophyData = {
 			team: 'Anderson High Not The Jets',
 			logoUrl: 'https://i.imgur.com/q4j1M2D.png',
 			content:
-				"After going 9-19 over his first 2 seasons, Not The Jets found some stability and finished 2015 piping hot, with 5 wins in his last 6 games(142.7 PPG over that span). In a season where the NFL was ravaged by injuries, Not The Jets' depth, waiver-wire pickups, and win-nowadded up to his first WAFFL Championship. This lineup was highlighted by an excellent midseason pickup in Brandon Marshall whoscored 314.7 points in 2015. Not The Jets found some late season success with late pickups Drew Brees, DeAngelo Williams, and Tim Hightower. The champions' seasonal lineup included: QB Eli Manning (10th)... RB Adrian Peterson (2nd)... RB Darren McFadden (11th)...WR Jordan Matthews(18th)... WR Emmanuel Sanders (19th)... WR Keenan Allen (43rd)... TE Delanie Walker (4th)... Not The Jets scored1786.5 points in 2015, 2nd in the league."
+				"After going 9-19 over his first 2 seasons, Not The Jets found some stability and finished 2015 piping hot, with 5 wins in his last 6 games(142.7 PPG over that span). In a season where the NFL was ravaged by injuries, Not The Jets' depth, waiver-wire pickups, and win-now added up to his first WAFFL Championship. This lineup was highlighted by an excellent midseason pickup in Brandon Marshall whoscored 314.7 points in 2015. Not The Jets found some late season success with late pickups Drew Brees, DeAngelo Williams, and Tim Hightower. The champions' seasonal lineup included: QB Eli Manning (10th)... RB Adrian Peterson (2nd)... RB Darren McFadden (11th)...WR Jordan Matthews(18th)... WR Emmanuel Sanders (19th)... WR Keenan Allen (43rd)... TE Delanie Walker (4th)... Not The Jets scored1786.5 points in 2015, 2nd in the league."
 		},
 		{
 			year: '2016',
@@ -33,7 +33,7 @@ const trophyData = {
 			team: 'Anderson High Not The Jets',
 			logoUrl: 'https://i.imgur.com/q4j1M2D.png',
 			content:
-				"Despite going 19-23 over the last three seasons, Not The Jets have won two WAFFL championships in that span, with only 4 players hanging onto the roster for both rings (Rawls, Tate, Witten, Steelers). After going 2-12 in 2016, this championship was built on the off season trade for Todd Gurley. In the 2017 draft,Not The Jets cashed in all their picks after the 1.01 to create the highest scoring running back duo with Todd Gurley and rookie Leonard Fournette. The duo doubled the score of the previous year’s duo of Ryan Mathews and Devontae Booker. Todd Gurley had two top-9 all-time WAFFL performances in Week 15 and 16 and scored more fantasy points over that two week stint than any other player in NFL history (97.1 points).The champions' seasonal lineup included: QB Alex Smith(3rd)... RB Todd Gurley(1st)... RB Leonard Fournette(8th)... WR AdamThielan(8th)... WR Doug Baldwin(13th)... WR Golden Tate(15th)... TE Jason Witten(10th)...Not The Jets scored 1718.04 points in 2017, 3rd in the league."
+				"Despite going 19-23 over the last three seasons, Not The Jets have won two WAFFL championships in that span, with only 4 players hanging onto the roster for both rings (Rawls, Tate, Witten, Steelers). After going 2-12 in 2016, this championship was built on the off season trade for Todd Gurley. In the 2017 draft,Not The Jets cashed in all their picks after the 1.01 to create the highest scoring running back duo with Todd Gurley and rookie Leonard Fournette. The duo doubled the score of the previous year’s duo of Ryan Mathews and Devontae Booker. Todd Gurley had two top-9 all-time WAFFL performances in Week 15 and 16 and scored more fantasy points over that two week stint than any other player in NFL history (97.1 points).The champions' seasonal lineup included: QB Alex Smith(3rd)... RB Todd Gurley(1st)... RB Leonard Fournette(8th)... WR Adam Thielan(8th)... WR Doug Baldwin(13th)... WR Golden Tate(15th)... TE Jason Witten(10th)...Not The Jets scored 1718.04 points in 2017, 3rd in the league."
 		},
 		{
 			year: '2018',
@@ -63,7 +63,7 @@ const trophyData = {
 			team: 'Stillwater Nadoes',
 			logoUrl: 'https://i.imgur.com/lLmmaih.png',
 			content:
-				"The clock struck midnight on championship week, but the 2015 Nadoes may go down as WAFFL's best Cinderella story of all time. Shawn Webster adopted this team in the offseason following the 2014 season and was the clear favorite to finish in last place. A trade for Devonta Freeman and aquisition of rookie David Johnson were key to this team of super-sleepers rising into playoff contention. The odds of a playoff berth were stacked against the Nadoes even late in the season. The Chili Peppers dropped their last three and the Toad Lickers dropped their last four to allow a Nado playoff berth. In Week 14, 4 teams ahead of him lost their games to push the Nadoes up into the 4th seed, where he upset the first seed Beer in Round 1. The Cinderella story ended when losing to Not The Jets in the WAFFL Bowl, but the Nadoes have to be happy about their performance in 2015, especially since they don't own their own draft pick. The Nadoes scored 1600.9 points in 2015, 8th best in WAFFL."
+				"The clock struck midnight on championship week, but the 2015 Nadoes may go down as WAFFL's best Cinderella story of all time. Shawn Webster adopted this team in the offseason following the 2014 season and was the clear favorite to finish in last place. A trade for Devonta Freeman and acquisition of rookie David Johnson were key to this team of super-sleepers rising into playoff contention. The odds of a playoff berth were stacked against the Nadoes even late in the season. The Chili Peppers dropped their last three and the Toad Lickers dropped their last four to allow a Nado playoff berth. In Week 14, 4 teams ahead of him lost their games to push the Nadoes up into the 4th seed, where he upset the first seed Beer in Round 1. The Cinderella story ended when losing to Not The Jets in the WAFFL Bowl, but the Nadoes have to be happy about their performance in 2015, especially since they don't own their own draft pick. The Nadoes scored 1600.9 points in 2015, 8th best in WAFFL."
 		},
 		{
 			year: '2016',
@@ -121,7 +121,7 @@ const trophyData = {
 			team: 'Canyon Creek Chili Peppers',
 			logoUrl: 'https://i.imgur.com/a9jFlAW.png',
 			content:
-				'Going for the repeat, the Chili Peppers we able to clinch the 2nd seed in a roller-coaster fashion. This team finished top-three in scoring five weeks and bottom-three in scoring four times. The hyper-consistent roster returned every single starter from their championship season, but saw steep drop-offs from Jordy Nelson (32) and Demarco Murray (29) and didn’t make a single waiver transaction all season. Coming off their worst scoring season in history and their 4th straight year trotting out the oldest lineup in the league, it’s possible that the Brown-Murray-Nelson domination is fading away. The Chili Peppers scored 1720.1 points in 2017, 2nd most in the league.'
+				'Going for the repeat, the Chili Peppers were able to clinch the 2nd seed in a roller-coaster fashion. This team finished top-three in scoring five weeks and bottom-three in scoring four times. The hyper-consistent roster returned every single starter from their championship season, but saw steep drop-offs from Jordy Nelson (32) and Demarco Murray (29) and didn’t make a single waiver transaction all season. Coming off their worst scoring season in history and their 4th straight year trotting out the oldest lineup in the league, it’s possible that the Brown-Murray-Nelson domination is fading away. The Chili Peppers scored 1720.1 points in 2017, 2nd most in the league.'
 		},
 		{
 			year: '2018',
@@ -556,43 +556,43 @@ const trophyData = {
 	thirdLast: [
 		{
 			year: '2013',
-            team: 'North Austin Wenches',
-            logoUrl: 'https://i.imgur.com/qVAzfoj.png',
+			team: 'North Austin Wenches',
+			logoUrl: 'https://i.imgur.com/qVAzfoj.png',
 			content:
 				"2013 was a rough go, but ownership simply didn't understand how young and immature this roster was. The future should treat him better as long as manages his roster decision-making reasonably well from here on out. The Wenches held a 5-9 record only averaging 109.2 points per week."
 		},
 		{
 			year: '2014',
-            team: 'Travis County Toad Lickers',
-            logoUrl: 'https://i.imgur.com/TpSQJZN.png',
+			team: 'Travis County Toad Lickers',
+			logoUrl: 'https://i.imgur.com/TpSQJZN.png',
 			content:
 				"Despite early rebuilding intentions, the Toad Lickers had a relatively hot start, going 5-5 through the first 10 weeks. The team's capped potential and difficult schedule eventually caught up to him as he earned his 2nd number one pick in as many seasons. Finishing with a 5-9 record, Toad Lickers averaged 108.7 points per week, somehow regressing from last year's dead last campaign."
 		},
 		{
 			year: '2015',
-            team: 'Travis County Toad Lickers',
-            logoUrl: 'https://i.imgur.com/TpSQJZN.png',
+			team: 'Travis County Toad Lickers',
+			logoUrl: 'https://i.imgur.com/TpSQJZN.png',
 			content:
 				"Back-to-back seasons of 8th place for the Toad Lickers was pretty disappointing despite the team's 2015 rebuilding intentions. They were one of 5 teams that missed playoffs by one game, and the Toad Lickers lost their last 4 regular season games in a row. Finishing with a 6-8 record, the Toad Lickers averaged 113.5 points per week, their best in 3 seasons with many, many reasons to be optimistic about the future."
 		},
 		{
 			year: '2016',
-            team: 'El Paso Cartels',
-            logoUrl: 'https://i.imgur.com/lIRYULG.png',
+			team: 'El Paso Cartels',
+			logoUrl: 'https://i.imgur.com/lIRYULG.png',
 			content:
 				'The ever-slipping Cartels finally find themselves earning a bottom-3 trophy. Their only success in WAFFL thus far was in 2013, when they finished in 3rd place. Since then, they’ve slipped to finishes of 6th, 7th and now 8th place. The Cartels find themselves in an odd place, with no stars outside of Aaron Rodgers, but no holes. Without some massive strategic changes, it’s hard to see this team getting a playoff spot or a high pick next season. The Cartels finished with a 5-9 record, averaging 112.92 points per week.'
 		},
 		{
 			year: '2017',
-            team: 'Central Texas Islanders',
-            logoUrl: 'https://i.imgur.com/bDpjNeF.png',
+			team: 'Central Texas Islanders',
+			logoUrl: 'https://i.imgur.com/bDpjNeF.png',
 			content:
 				'The Islanders have become the most dominant non-playoff team of all-time, winning their third consolation championship in their third appearance out of the playoffs. Hilarious coincidences aside, the Islanders took a massive step back from their 10-win season last year with poor play and horrible luck. With 8 players ending their seasons’ on IR, the Islanders needed help from upcoming players considering their investments of nine top-12 picks over the last 3 drafts. Outside of star Kareem Hunt and starter Christian McCaffery, these picks have severely underwhelmed. The supporting cast of the Islanders is entering a make-or-break 2018. The Islanders finished with a 5-9 record, averaging 110.85 points per week.'
 		},
 		{
 			year: '2018',
-            team: 'South Lubbock Toad Lickers',
-            logoUrl: 'https://i.imgur.com/TpSQJZN.png',
+			team: 'South Lubbock Toad Lickers',
+			logoUrl: 'https://i.imgur.com/TpSQJZN.png',
 			content:
 				'The Toad Lickers unfortunately come away with this trophy for the 3rd time in WAFFL’s six years. After two years of rebuilds, picking up Melvin Gordon, Amari Cooper, and Jordan Howard, the Toad Lickers were the T-3rd winningest team in WAFFL in the 2016 and 2017 seasons. The Toad Lickers saw 2 playoff appearances over that span as well. This year, the wheels fell off as they were only able to muster 5 wins. Multiple factors led to this stinker of a year… the Toad Lickers easily boasted the most difficult schedule and they failed to draft a different maker over the last two drafts (other than 4th round pick Kenny Golladay who was traded away in the preseason). The Toad Lickers clearly hope to sneak back into playoffs in 2019, but it’s difficult to see their roster finishing in the top 4 by season’s end. The Toad Lickers finished with a 5-9 record, averaging 123.62 points per week.'
 		}
@@ -600,43 +600,43 @@ const trophyData = {
 	secondLast: [
 		{
 			year: '2013',
-            team: 'San Marcos Librarians',
-            logoUrl: 'https://i.imgur.com/znuRXVw.png',
+			team: 'San Marcos Librarians',
+			logoUrl: 'https://i.imgur.com/znuRXVw.png',
 			content:
 				"Genuinely one of the unluckier teams, the Librarians' biggest problem was simply a lack of identity. This team is flooded with roster-cloggers that are startable, but without superstar upside. 2014 will be an interesting year as the team projects to be middling, yet without its 2015 draft pick. The Librarians went 4-10 only averaging 116.7 points per week."
 		},
 		{
 			year: '2014',
-            team: 'Far West Not The Jets',
-            logoUrl: 'https://i.imgur.com/q4j1M2D.png',
+			team: 'Far West Not The Jets',
+			logoUrl: 'https://i.imgur.com/q4j1M2D.png',
 			content:
 				"Acting as one of the more active traders in WAFFL, Not The Jets has made a series of trades over the last two seasons that has given him five Top 5 draft picks over the first two rookie drafts. Despite his record and scoring regressing from last year's disappointing campaign, he finds himself in a great spot for the future. For better or for worse, his talent seeking skills will be on display during the 2015 draft. Not The Jets finished with a 4-10 record averaging 113.1 points per week."
 		},
 		{
 			year: '2015',
-            team: 'College Station Digital Rays',
-            logoUrl: 'https://i.imgur.com/Je5Chs0.png',
+			team: 'College Station Digital Rays',
+			logoUrl: 'https://i.imgur.com/Je5Chs0.png',
 			content:
 				"The Digital Rays did everything they could in 2015 to miss the playoffs. With the least PA in 2015 (109.2 PPG, 3rd least all-time), the Digital Rays were given a schedule that they would have dreamed of in previous years. With strong rebuilding intentions in 2015, the Digital Rays knew that they weren't strong enough for a 2015 championship run and intentionally lost several games in order to miss playoffs. They only missed playoffs by one game in a season with tons of parity. The Digital Rays finished with a 6-8 record averaging 99.7 points per week."
 		},
 		{
 			year: '2016',
-            team: 'Champaign Wenches',
-            logoUrl: 'https://i.imgur.com/qVAzfoj.png',
+			team: 'Champaign Wenches',
+			logoUrl: 'https://i.imgur.com/qVAzfoj.png',
 			content:
 				'The Wenches saw a middling roster get absolutely decimated by poor situation and injury. With 2015’s MVP banged up and playing poorly, the meat of this team was left exposed. They finished 4th to last in RB Points in a season, 2nd to last in WR Points in a season, and 4th to last in TE points in a season. ALL TIME. The Wenches enter 2017 as favorites for the #1 pick, if they stay the path and keep their pick, something they are yet to do. The Wenches, who are now the only team with zero playoff appearances, have also lacked great draft slots (6th, 6th, 5th, and 3rd) getting bullied into the middle of each round. The Wenches finished with a 5-9 record averaging 102.25 points per week.'
 		},
 		{
 			year: '2017',
-            team: 'El Paso Cartels',
-            logoUrl: 'https://i.imgur.com/lIRYULG.png',
+			team: 'El Paso Cartels',
+			logoUrl: 'https://i.imgur.com/lIRYULG.png',
 			content:
-				'For the fourth straight season, the Cartels have put up disappointing win totals but this year’s 3 wins is third worst all-time. The Cartels seem to have a complete lack of star power behind their quarterback, and when he misses time due to an injury, there are few redeeming qualities from this team over the years. With that said, No team has had worse scheduling luck over the years with 7 luck losses over the last 4 years. Working in their favor, te Cartels are historically the best drafting team, have some of the best young depth, and come into the 2018 draft with 6 picks in the first 22. The Cartels went 3-11, averaging 103.01 per week.'
+				'For the fourth straight season, the Cartels have put up disappointing win totals but this year’s 3 wins is third worst all-time. The Cartels seem to have a complete lack of star power behind their quarterback, and when he misses time due to an injury, there are few redeeming qualities from this team over the years. With that said, No team has had worse scheduling luck over the years with 7 luck losses over the last 4 years. Working in their favor, the Cartels are historically the best drafting team, have some of the best young depth, and come into the 2018 draft with 6 picks in the first 22. The Cartels went 3-11, averaging 103.01 per week.'
 		},
 		{
 			year: '2018',
-            team: 'South Lubbock Toad Lickers',
-            logoUrl: 'https://i.imgur.com/TpSQJZN.png',
+			team: 'South Lubbock Toad Lickers',
+			logoUrl: 'https://i.imgur.com/TpSQJZN.png',
 			content:
 				'Three straight 7-win campaigns kept this team from earning one of these last place trophies, but their scoring over the last 4 years has placed, 7th, 8th, 6th, and 9th. The Nadoes really haven’t been able to build much momentum from the atrocious roster and draft capital left behind by the Librarians. With lots of young depth on the roster from the last 4 draft classes but no real difference makers, the Nadoes are in purgatory for the next season or two. They can hopefully unload some of these young assets at good value, but there’s no real direction for this team at the moment. The Nadoes went 4-10, averaging 104.52 points per week.'
 		}
@@ -644,43 +644,43 @@ const trophyData = {
 	theBitch: [
 		{
 			year: '2013',
-            team: 'Travis County Toad Lickers',
-            logoUrl: 'https://i.imgur.com/TpSQJZN.png',
+			team: 'Travis County Toad Lickers',
+			logoUrl: 'https://i.imgur.com/TpSQJZN.png',
 			content:
 				"Possibly the award's most ironic potential winner, Matt Lessig actually won the championship in the last redraft season before WAFFL. This team simply needs to be torn apart and grown from scratch. I would make a strong bet that this team will be the only team in WAFFL to ever win this award along with the Oldest Team award. The Toad Lickers went 4-10 only averaging 112.2 points per game."
 		},
 		{
 			year: '2014',
-            team: 'San Marcos Librarians',
-            logoUrl: 'https://i.imgur.com/znuRXVw.png',
+			team: 'San Marcos Librarians',
+			logoUrl: 'https://i.imgur.com/znuRXVw.png',
 			content:
 				"Unfortunate circumstances in this one. A mid-season evaluation led this team to decide to rebuild. The lateness in the decision set this team back further. Through multiple trades before the decision, the Librarians exhausted their rebuilding assets. For example, in 2013, the Librarians traded away their 2014 and 2015 first round picks (which became the 3rd and 5th overall) for Pierre Garcon (the WR45 in 2014). In the 2014 offseason, the Librarians traded away the Islanders' 2015 1st and 2nd round picks (which became 2nd and 12th overall) for Victor Cruz (IR), Stevan Ridley (IR), and Hakeem Nicks (WR91). Expect ownership of 2016's 1st overall draft pick as well as the 2015 season being a long one for the Librarians. They finished with a 4-10 record, only averaging 98.8 points per game. 98.8?!"
 		},
 		{
 			year: '2015',
-            team: 'Central Texas Islanders',
-            logoUrl: 'https://i.imgur.com/bDpjNeF.png',
+			team: 'Central Texas Islanders',
+			logoUrl: 'https://i.imgur.com/bDpjNeF.png',
 			content:
 				"The Islanders lost 8 games in a row in 2014, while finishing the season strong with a 3-game winning streak, followed by a Week 14 loss. Despite the late-season optimism, that loss to end the season became the first of a WAFFL record, 9 straight losses. The Islanders found form once again late, and set a team-record, 5 straight wins after that but losing again in Week 14. Hopefully they don't set another losing streak record in 2016, but the Islanders have more reason to be optimistic this time around. The Islanders averaged just 107 PPG through their 0-8 start and averaged 127.1 PPG in their last 6. They finished with a 5-9 record, averaging 115.6 points per game."
 		},
 		{
 			year: '2016',
-            team: 'Anderson High Not The Jets',
-            logoUrl: 'https://i.imgur.com/q4j1M2D.png',
+			team: 'Anderson High Not The Jets',
+			logoUrl: 'https://i.imgur.com/q4j1M2D.png',
 			content:
 				'No one has ever tried harder to tank than the 2016 version of Not The Jets; and no one has succeeded more. The defending champions made 9 trades in December of 2015, stripping their team of nine players older than 27, while gaining seven players under 25 and three draft picks. A key feature of this team’s strategy was a punt at the TE position. One that totaled 0.9 points through the first 9 weeks and finished with 18.5 total points. In the end, their optimal lineup was lowest in the league and the team was awarded the #1 overall pick (with seemingly no competition).  Not The Jets finished with a 2-12 record (a WAFFL record), averaging 92.53 points per game (a WAFFL record).'
 		},
 		{
 			year: '2017',
-            team: 'Champaign Wenches',
-            logoUrl: 'https://i.imgur.com/qVAzfoj.png',
+			team: 'Champaign Wenches',
+			logoUrl: 'https://i.imgur.com/qVAzfoj.png',
 			content:
 				'The Wenches are 12 wins under .500 all-time, are dead last in all time wins and points scored of the original WAFFL teams, and somehow only have two more wins than the Nadoes despite playing 28 more games. Even still, this is the first time the Wenches have finished in last place. Finally deciding to tank after they became the only team to never make playoffs once in 2016, the Wenches have set themselves up with the leagues youngest roster and ridiculous draft value in the next two upcoming classes. The Wenches should surely see their first playoff appearance soon enough with an embarrassment of riches when it comes to young talent, but holy shit were they bad this year. The Wenches finished 2-12, averaging an all-time worst 85.11 points.'
 		},
 		{
 			year: '2018',
-            team: 'Canyon Creek Chili Peppers',
-            logoUrl: 'https://i.imgur.com/a9jFlAW.png',
+			team: 'Canyon Creek Chili Peppers',
+			logoUrl: 'https://i.imgur.com/a9jFlAW.png',
 			content:
 				'The Chili Peppers in a single season took 8.1% off their all-time winning percentage and increased their all-time loss total by 46%. That’s just how good this team was over WAFFL’s first 5 years, and just how awful their tanking season was this year. The Chili Peppers tied the record for most losses in a season (12) and set the record for fewest points in a season (1188.88) set by the Wenches last year. One the good side of things, this team enters the next two draft classes with 3 picks in each of the first two rounds. They have the foundation for a rebuild and a competent owner to bring this team to relevance again, but it looks like they have at least a couple seasons of misery left. The Chili Peppers finished 2-12, averaging an all-time worst 84.92 points per game.'
 		}
