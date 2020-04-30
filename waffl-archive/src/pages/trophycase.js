@@ -54,8 +54,13 @@ const Div = styled.div`
 			width: 100%;
 			background: #17b978;
 
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
 			img {
 				margin: 0;
+				max-height: 3rem;
 			}
 		}
 
@@ -66,8 +71,13 @@ const Div = styled.div`
 			height: 4rem;
 			width: 100%;
 
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
 			img {
 				margin: 0;
+				max-height: 3rem;
 			}
 		}
 	}
@@ -105,6 +115,58 @@ const TrophyCasePage = () => {
 			case 'Waffl Third Place':
 				result.logoUrl = 'https://i.imgur.com/n5Vm00u.png';
 				result.data = trophyData.wafflThirdPlace;
+				break;
+			case 'Most Surprising':
+				result.logoUrl = 'https://i.imgur.com/d1OOFqw.png';
+				result.data = trophyData.mostSurprising;
+				break;
+			case 'Most Dissapointing':
+				result.logoUrl = 'https://i.imgur.com/mQMTqgw.png';
+				result.data = trophyData.mostDissapointing;
+				break;
+			case 'Oldest Team':
+				result.logoUrl = 'https://i.imgur.com/g78GpfJ.png';
+				result.data = trophyData.oldestTeam;
+				break;
+			case 'Youngest Team':
+				result.logoUrl = 'https://i.imgur.com/dIzK1Fn.png';
+				result.data = trophyData.youngestTeam;
+				break;
+			case 'Analytical Ron':
+				result.logoUrl = 'https://i.imgur.com/LbkcXtZ.png';
+				result.data = trophyData.analyticalRon;
+				break;
+			case 'Biggest Victory':
+				result.logoUrl = 'https://i.imgur.com/r0OWNG7.png';
+				result.data = trophyData.biggestVictory;
+				break;
+			case 'Worst Loss':
+				result.logoUrl = 'https://i.imgur.com/tOkRNfH.png';
+				result.data = trophyData.worstLoss;
+				break;
+			case 'Best Regular Season Record':
+				result.logoUrl = 'https://i.imgur.com/4QrXkcr.png';
+				result.data = trophyData.bestRecord;
+				break;
+			case 'Total Points Leader':
+				result.logoUrl = 'https://i.imgur.com/5HSujwC.png';
+				result.data = trophyData.totalPointLeader;
+				break;
+			case 'Fewest Total Points':
+				result.logoUrl = 'https://i.imgur.com/s9OrAfA.png';
+				result.data = trophyData.fewestTotalPoints;
+				break;
+			case 'Third Last':
+				result.logoUrl = 'https://i.imgur.com/OIg5BY5.png';
+				result.data = trophyData.thirdLast;
+				break;
+			case 'Second Last':
+				result.logoUrl = 'https://i.imgur.com/2xcpXvn.png';
+				result.data = trophyData.secondLast;
+				break;
+			case 'The Bitch':
+				result.logoUrl = 'https://i.imgur.com/lW1osWw.png';
+				result.data = trophyData.theBitch;
 				break;
 		}
 		return result;
@@ -157,6 +219,127 @@ const TrophyCasePage = () => {
 									alt="Waffl Third Place"
 									title="Waffl Third Place"
 								/>
+							</div>
+							<div
+								title="Most Surprising"
+								className={selectedAward === 'Most Surprising' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img
+									src="https://i.imgur.com/d1OOFqw.png"
+									alt="Most Surprising"
+									title="Most Surprising"
+								/>
+							</div>
+							<div
+								title="Most Dissapointing"
+								className={selectedAward === 'Most Dissapointing' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img
+									src="https://i.imgur.com/mQMTqgw.png"
+									alt="Most Dissapointing"
+									title="Most Dissapointing"
+								/>
+							</div>
+							<div
+								title="Oldest Team"
+								className={selectedAward === 'Oldest Team' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img src="https://i.imgur.com/g78GpfJ.png" alt="Oldest Team" title="Oldest Team" />
+							</div>
+							<div
+								title="Youngest Team"
+								className={selectedAward === 'Youngest Team' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img src="https://i.imgur.com/dIzK1Fn.png" alt="Youngest Team" title="Youngest Team" />
+							</div>
+							<div
+								title="Analytical Ron"
+								className={selectedAward === 'Analytical Ron' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img
+									src="https://i.imgur.com/LbkcXtZ.png"
+									alt="Analytical Ron"
+									title="Analytical Ron"
+								/>
+							</div>
+							<div
+								title="Biggest Victory"
+								className={selectedAward === 'Biggest Victory' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img
+									src="https://i.imgur.com/r0OWNG7.png"
+									alt="Biggest Victory"
+									title="Biggest Victory"
+								/>
+							</div>
+							<div
+								title="Worst Loss"
+								className={selectedAward === 'Worst Loss' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img src="https://i.imgur.com/tOkRNfH.png" alt="Worst Loss" title="Worst Loss" />
+							</div>
+							<div
+								title="Best Regular Season Record"
+								className={
+									selectedAward === 'Best Regular Season Record' ? 'activeAward' : 'inactiveAward'
+								}
+								onClick={(e) => switchAward(e)}
+							>
+								<img
+									src="https://i.imgur.com/4QrXkcr.png"
+									alt="Best Regular Season Record"
+									title="Best Regular Season Record"
+								/>
+							</div>
+							<div
+								title="Total Points Leader"
+								className={selectedAward === 'Total Points Leader' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img
+									src="https://i.imgur.com/5HSujwC.png"
+									alt="Total Points Leader"
+									title="Total Points Leader"
+								/>
+							</div>
+							<div
+								title="Fewest Total Points"
+								className={selectedAward === 'Fewest Total Points' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img
+									src="https://i.imgur.com/s9OrAfA.png"
+									alt="Fewest Total Points"
+									title="Fewest Total Points"
+								/>
+							</div>
+							<div
+								title="Third Last"
+								className={selectedAward === 'Third Last' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img src="https://i.imgur.com/OIg5BY5.png" alt="Third Last" title="Third Last" />
+							</div>
+							<div
+								title="Second Last"
+								className={selectedAward === 'Second Last' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img src="https://i.imgur.com/2xcpXvn.png" alt="Second Last" title="Second Last" />
+							</div>
+							<div
+								title="The Bitch"
+								className={selectedAward === 'The Bitch' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img src="https://i.imgur.com/lW1osWw.png" alt="The Bitch" title="The Bitch" />
 							</div>
 						</div>
 						<AwardUnit

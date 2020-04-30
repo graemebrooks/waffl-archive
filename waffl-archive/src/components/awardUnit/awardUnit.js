@@ -7,12 +7,16 @@ const Div = styled.div`
 	display: flex;
 	flex-direction: column;
 	background: #2d4059;
-	// margin: 2rem 0rem;
 	padding: 1rem;
 
 	img {
-		max-width: 20rem;
-		margin: 0 auto;
+		max-width: 30rem;
+		max-height: 30rem;
+		margin: 5rem auto;
+	}
+
+	li {
+		margin: 3rem auto;
 	}
 `;
 
