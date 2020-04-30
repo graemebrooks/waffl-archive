@@ -16,22 +16,44 @@ const Div = styled.div`
 	}
 
 	li {
-		margin: 3rem auto;
+		p {
+			margin: 3rem auto;
+			border: 1px solid white;
+			padding: 1rem;
+			background: #213642;
+		}
+
+		div {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		h3 {
+			margin: 0;
+		}
+
+		img {
+			max-height: 5rem;
+			margin: 0 2rem;
+		}
 	}
 `;
 
 const awardUnit = ({ data, title, imageUrl }) => {
 	return (
 		<Div>
-			<h2>{title}</h2>
 			<img src={imageUrl} alt="WAFFL Champion" />
 			<ul>
 				{data.map((award) => {
 					return (
 						<li>
-							<h3>
-								{award.year} - {award.team}
-							</h3>
+							<div>
+								<h3>
+									{award.year} - {award.team}{' '}
+								</h3>
+								<img src={award.logoUrl} />
+							</div>
 							<p>{award.content}</p>
 						</li>
 					);
