@@ -5,8 +5,16 @@ import styled from 'styled-components';
 import Layout from '../components/layout/layout';
 import AwardUnit from '../components/awardUnit/awardUnit';
 
+import trophyData from '../../static/trophyData';
+
 // styles
 const Div = styled.div`
+	margin: 0 auto;
+
+	* {
+		list-style-type: none;
+	}
+
 	.formatSelect {
 		width: 50vw;
 		height: 6vh;
@@ -14,6 +22,7 @@ const Div = styled.div`
 		display: flex;
 		justify-content: center;
 		cursor: pointer;
+		margin-bottom: 2rem;
 
 		h3 {
 			display: flex;
@@ -32,31 +41,73 @@ const Div = styled.div`
 			background: #17b978;
 		}
 	}
-`;
 
-// hard-coded trophy data
-const wafflChampion = [
-	{
-		year: '2013',
-		team: 'West Lubbock Ice Babies',
-		content:
-			'The first season in WAFFL saw an undefeated campaign, the first I have personally ever seen or heard about in any league. The Ice Babies went a perfect 14-0 in the regular season and had little resistance in the playoffs. The star studded lineup was highlighted bythe record shattering season from Peyton Manning who scored 446 points in 2013, by far the most of any QB. The Ice Babies also owned the number one WR in Josh Gordon who missed the first two games with a suspension. Star WR Julio Jones also missed the whole season past Week 5.The star-studded championship lineup included: QB Peyton Manning (1st)... RB LeSean McCoy (2nd)... RB Matt Forte (3rd)... WR JoshGordon (1st)... WR Dez Bryant (7th)... WR Larry Fitzgerald (17th)... TE Jordan Cameron (5th)... The Ice Babies scored 2115 points in 2013, 1st in the league.'
-	},
-	{
-		year: '2014',
-		team: 'North Austin Ice Babies',
-		content:
-			"The first two seasons in WAFFL saw a repeat champion. The Ice Babies followed up their perfect 2013 season with a similarly successful one, only blemished once in the regular season. The Ice Babies have gone 27-1 with two titles over the first two seasons of WAFFL,becoming the league's first dynasty. This star studded lineup was highlighted by an excellent season from Rob Gronkowski whoscored 234.4points in 2014, an astronomical number in a very weak year at TE. The Ice Babies welcomed back star WR Julio Jones and were defined by their impressive receiving corps. The star-studded championship lineup included: QB Peyton Manning (4th)... RB Matt Forte (3rd)... RB LeSean McCoy (12th)... WR Dez Bryant (4th)... WR Julio Jones (7th)... WR Calvin Johnson (14th)... TE Rob Gronkowski (1st)...The Ice Babies scored 2046.1 points in 2014, 1st in the league."
+	.yearContainer {
+		background: #213642;
+		display: flex;
+
+		.activeAward {
+			padding: 0.5rem;
+			max-width: 6rem;
+			cursor: pointer;
+			height: 4rem;
+			width: 100%;
+			background: #17b978;
+
+			img {
+				margin: 0;
+			}
+		}
+
+		.inactiveAward {
+			padding: 0.5rem;
+			max-width: 6rem;
+			cursor: pointer;
+			height: 4rem;
+			width: 100%;
+
+			img {
+				margin: 0;
+			}
+		}
 	}
-];
+`;
 
 // COMPONENT
 const TrophyCasePage = () => {
-	const [ selected, setSelected ] = useState('By Award');
+	const [ selectedFormat, setSelectedFormat ] = useState('By Award');
+	const [ selectedAward, setSelectedAward ] = useState('Waffl Champion');
 
 	const switchFormat = (e) => {
 		e.persist();
-		setSelected(e.target.innerHTML);
+		setSelectedFormat(e.target.innerHTML);
+	};
+
+	const switchAward = (e) => {
+		e.persist();
+		setSelectedAward(e.target.title);
+	};
+
+	const getAwardData = (award) => {
+		let result = {
+			logoUrl: '',
+			data: []
+		};
+		switch (award) {
+			case 'Waffl Champion':
+				result.logoUrl = 'https://i.imgur.com/xqTogHD.png';
+				result.data = trophyData.wafflChampion;
+				break;
+			case 'Waffl Runner Up':
+				result.logoUrl = 'https://i.imgur.com/WbrbGwL.png';
+				result.data = trophyData.wafflRunnerUp;
+				break;
+			case 'Waffl Third Place':
+				result.logoUrl = 'https://i.imgur.com/n5Vm00u.png';
+				result.data = trophyData.wafflThirdPlace;
+				break;
+		}
+		return result;
 	};
 
 	return (
@@ -64,19 +115,56 @@ const TrophyCasePage = () => {
 			<h1>WAFFL Trophy Case</h1>
 			<Div>
 				<div className="formatSelect">
-					<h3 className={selected === 'By Award' ? 'active' : ''} onClick={(e) => switchFormat(e)}>
+					<h3 className={selectedFormat === 'By Award' ? 'active' : ''} onClick={(e) => switchFormat(e)}>
 						By Award
 					</h3>
-					<h3 className={selected === 'By Team' ? 'active' : ''} onClick={(e) => switchFormat(e)}>
+					<h3 className={selectedFormat === 'By Team' ? 'active' : ''} onClick={(e) => switchFormat(e)}>
 						By Team
 					</h3>
 				</div>
 				<div className="yearFormat">
-					<AwardUnit
-						data={wafflChampion}
-						title={'WAFFL Champion'}
-						imageUrl={'https://i.imgur.com/xqTogHD.png'}
-					/>
+					<div className="yearContainer">
+						<div>
+							<div
+								title="Waffl Champion"
+								className={selectedAward === 'Waffl Champion' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img
+									src="https://i.imgur.com/xqTogHD.png"
+									alt="Waffl Champion"
+									title="Waffl Champion"
+								/>
+							</div>
+							<div
+								title="Waffl Runner Up"
+								className={selectedAward === 'Waffl Runner Up' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img
+									src="https://i.imgur.com/WbrbGwL.png"
+									alt="Waffl Runner Up"
+									title="Waffl Runner Up"
+								/>
+							</div>
+							<div
+								title="Waffl Third Place"
+								className={selectedAward === 'Waffl Third Place' ? 'activeAward' : 'inactiveAward'}
+								onClick={(e) => switchAward(e)}
+							>
+								<img
+									src="https://i.imgur.com/n5Vm00u.png"
+									alt="Waffl Third Place"
+									title="Waffl Third Place"
+								/>
+							</div>
+						</div>
+						<AwardUnit
+							data={getAwardData(selectedAward).data}
+							title={selectedAward}
+							imageUrl={getAwardData(selectedAward).logoUrl}
+						/>
+					</div>
 				</div>
 			</Div>
 		</Layout>

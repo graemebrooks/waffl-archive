@@ -7,7 +7,7 @@ const Div = styled.div`
 	display: flex;
 	flex-direction: column;
 	background: #2d4059;
-	margin: 2rem 0rem;
+	// margin: 2rem 0rem;
 	padding: 1rem;
 
 	img {
