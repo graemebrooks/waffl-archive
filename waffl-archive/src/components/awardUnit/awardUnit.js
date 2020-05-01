@@ -38,6 +38,13 @@ const Div = styled.div`
 			margin: 0 2rem;
 		}
 	}
+
+	@media (max-width: 480px) {
+		img {
+			max-height: 15rem;
+			max-width: 15rem;
+		}
+	}
 `;
 
 const awardUnit = ({ data, title, imageUrl }) => {
