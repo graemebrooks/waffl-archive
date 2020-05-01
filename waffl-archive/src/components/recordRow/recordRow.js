@@ -21,7 +21,6 @@ const Div = styled.div`
 	.rowHeader {
 		width: 100%
 		height: 100%;
-		background: red;
 
 		display: flex;
 		flex-direction: row;
@@ -50,7 +49,20 @@ const Div = styled.div`
 	.rowBody {
 		color: white;
 		background: #2d4059;
+		margin-bottom: 3rem;
 	}
+
+	@media (max-width: 480px) {
+		.rowHeader {
+			display: flex;
+			flex-direction: column;
+
+			h3 {
+				width: 100%;
+			}
+		}
+	}
+
 `;
 
 const RecordRow = ({ data, title }) => {

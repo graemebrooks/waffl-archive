@@ -9,7 +9,7 @@ import DraftYear from '../components/draftYear/draftYear';
 
 // styles
 const Div = styled.div`
-	width: 70vw;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	cursor: pointer;

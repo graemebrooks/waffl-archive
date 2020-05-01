@@ -3,8 +3,13 @@ import styled from 'styled-components';
 
 //styles
 const Div = styled.div`
-	width: 50vw;
-	padding: 1rem;
+	width: 100%;
+	padding: 3rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 
 	font-family: 'PT Mono', monospace;
 
@@ -14,12 +19,19 @@ const Div = styled.div`
 		font-size: 1.2rem;
 	}
 
+	ol {
+		width: 100%;
+	}
+
 	p {
 		padding: .25rem;
 	}
 
 	p:hover {
 		background: #213642;
+	}
+
+	@media (max-width: 480px) {
 	}
 `;
 

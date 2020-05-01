@@ -7,7 +7,7 @@ import DraftRound from '../draftRound/draftRound';
 
 // styles
 const Div = styled.div`
-	width: 70vw;
+	width: 100%;
 	padding: .5rem;
 
 	display: flex;
@@ -49,6 +49,14 @@ const Div = styled.div`
 	.rowBody {
 		color: white;
 		background: #2d4059;
+	}
+
+	@media (max-width: 480px) {
+		width: 100%;
+
+		.rowBody {
+			width: 100%;
+		}
 	}
 `;
 

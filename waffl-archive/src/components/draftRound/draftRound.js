@@ -25,6 +25,21 @@ const Div = styled.div`
 	p:hover {
 		background: #213642;
 	}
+
+	@media (max-width: 480px) {
+		margin: 0;
+		width: 100%;
+
+		.round {
+			width: 100%;
+			margin: 0;
+		}
+
+		ol {
+			width: 100%;
+			margin: 0;
+		}
+	}
 `;
 
 const DraftRound = ({ data, colors, logos, getThemes, round }) => {

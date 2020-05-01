@@ -14,11 +14,17 @@ const Li = styled.li`
 	img {
 		max-height: 2rem;
 	}
+
+	@media (max-width: 480px) {
+		.selection {
+			width: 100%;
+		}
+	}
 `;
 
 const DraftSelection = ({ selection, colors, logos, getThemes }) => {
 	return (
-		<Li owner={selection.owner} colors={colors} logos={logos} getThemes={getThemes}>
+		<Li owner={selection.owner} colors={colors} logos={logos} getThemes={getThemes} className="selection">
 			{selection.player} - {selection.owner}
 			<img src={getThemes(selection.owner, colors, logos).logo} />
 		</Li>
