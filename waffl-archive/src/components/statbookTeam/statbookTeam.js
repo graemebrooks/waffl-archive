@@ -35,6 +35,12 @@ const Div = styled.div`
 		justify-content: space-between;
 	}
 
+	.statColumn {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
 	@media (max-width: 700px) {
 		.teamHeader {
 			max-width: 80vw;
@@ -60,8 +66,6 @@ const StatbookTeam = ({ team }) => {
 	const toggleDrawer = () => {
 		setTeamDrawerState({ isOpen: !teamDrawerState.isOpen });
 	};
-
-	// framer motion
 
 	return (
 		<Div
@@ -103,7 +107,11 @@ const StatbookTeam = ({ team }) => {
 				}}
 				transition={{ duration: 2, ease: 'easeOut' }}
 			>
-				<div>
+				<div className="statColumn">
+					<h3>Winning Seasons - {team.Seasons.winning}</h3>
+					<h3>Losing Seasons - {team.Seasons.losing}</h3>
+				</div>
+				<div className="statColumn">
 					<h3>Best Season</h3>
 					<p>
 						{team.bestSeason.record} - {team.bestSeason.year}
@@ -113,11 +121,8 @@ const StatbookTeam = ({ team }) => {
 						{team.worstSeason.record} - {team.worstSeason.year}
 					</p>
 				</div>
-				<div>
-					<h2>Winning Seasons - {team.Seasons.winning}</h2>
-					<h2>Losing Seasons - {team.Seasons.losing}</h2>
-				</div>
-				<div>
+
+				<div className="statColumn">
 					<h3>Longest Win Streak: {team.longestWinStreak}</h3>
 					<h3>Longest Loss Streak: {team.longestLossStreak}</h3>
 				</div>

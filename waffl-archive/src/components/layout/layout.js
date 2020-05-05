@@ -30,10 +30,11 @@ const Layout = (props) => {
 					{
 						rel: 'stylesheet',
 						href: 'https://fonts.googleapis.com/css2?family=Cairo&family=PT+Mono&display=swap'
-					},
-					{}
+					}
 				]}
-			/>
+			>
+				<script src="https://kit.fontawesome.com/7046b37ec7.js" crossorigin="anonymous" />
+			</Helmet>
 			<Header />
 			<div className={layoutStyles.container}>
 				<div className={layoutStyles.content}>{props.children}</div>
