@@ -52,45 +52,47 @@ const Div = styled.div`
 
 const RecordUnit = ({ data, title }) => {
 	const retrieveTeamLogoUrl = (string) => {
-		let regexResult = string.match(/ ([^,]+),/g);
+		let regexResult = string.match(/ ([^,]+)/g);
 		let teamName = regexResult[1];
 		let result = '';
 
 		switch (teamName) {
-			case 'Islanders':
+			case ' Islanders':
 				result = 'https://i.imgur.com/bDpjNeF.png';
 				break;
-			case 'Cartels':
+			case ' Cartels':
 				result = 'https://i.imgur.com/lIRYULG.png';
 				break;
-			case 'Wenches':
+			case ' Wenches':
 				result = 'https://i.imgur.com/qVAzfoj.png';
 				break;
-			case 'Digital Rays':
+			case ' Digital Rays':
 				result = 'https://i.imgur.com/Je5Chs0.png';
 				break;
-			case 'Chili Peppers':
+			case ' Chili Peppers':
 				result = 'https://i.imgur.com/a9jFlAW.png';
 				break;
-			case 'Beer':
+			case ' Beer':
 				result = 'https://i.imgur.com/aTs50El.png';
 				break;
-			case 'Not The Jets':
+			case ' Not The Jets':
 				result = 'https://i.imgur.com/q4j1M2D.png';
 				break;
-			case 'Toad Lickers':
+			case ' Toad Lickers':
 				result = 'https://i.imgur.com/TpSQJZN.png';
 				break;
-			case 'Ice Babies':
+			case ' Ice Babies':
 				result = 'https://i.imgur.com/KE0cDMD.png';
 				break;
-			case 'Nadoes':
+			case ' Nadoes':
 				result = 'https://i.imgur.com/lLmmaih.png';
 				break;
-			case 'Librarians':
+			case ' Librarians':
 				result = 'https://i.imgur.com/znuRXVw.png';
 				break;
 		}
+		console.log(teamName);
+		console.log(result);
 		return result;
 	};
 
@@ -104,7 +106,6 @@ const RecordUnit = ({ data, title }) => {
 							<div className="recordItem">
 								<p>
 									{score.playerTeamDate} - <span className={score}>{score.score}</span>
-									{retrieveTeamLogoUrl(score.playerTeamDate)}
 								</p>
 								<img src={retrieveTeamLogoUrl(score.playerTeamDate)} />
 							</div>
