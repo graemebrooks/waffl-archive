@@ -51,14 +51,9 @@ const Div = styled.div`
 `;
 
 const RecordUnit = ({ data, title }) => {
-	const findTeamName = (string) => {
-		let results = string.match(/(?<=, )[^,]+(?=,)/);
-		return results[0];
-	};
-
 	const retrieveTeamLogoUrl = (string) => {
-		let regexResult = string.match(/(?<=, )[^,]+(?=,)/);
-		let teamName = regexResult[0];
+		let regexResult = string.match(/ ([^,]+),/g);
+		let teamName = regexResult[1];
 		let result = '';
 
 		switch (teamName) {
@@ -92,6 +87,9 @@ const RecordUnit = ({ data, title }) => {
 			case 'Nadoes':
 				result = 'https://i.imgur.com/lLmmaih.png';
 				break;
+			case 'Librarians':
+				result = 'https://i.imgur.com/znuRXVw.png';
+				break;
 		}
 		return result;
 	};
@@ -106,6 +104,7 @@ const RecordUnit = ({ data, title }) => {
 							<div className="recordItem">
 								<p>
 									{score.playerTeamDate} - <span className={score}>{score.score}</span>
+									{retrieveTeamLogoUrl(score.playerTeamDate)}
 								</p>
 								<img src={retrieveTeamLogoUrl(score.playerTeamDate)} />
 							</div>
