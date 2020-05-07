@@ -90,6 +90,8 @@ const DraftpicksPage = () => {
 	const [ data2015, setData2015 ] = useState(); // 2015 draft data
 	const [ data2016, setData2016 ] = useState(); // 2016 draft data
 	const [ data2017, setData2017 ] = useState(); // 2017 draft data
+	const [ data2018, setData2018 ] = useState(); // 2018 draft data
+	const [ data2019, setData2019 ] = useState(); // 2019 draft data
 	const [ colors, setColors ] = useState(); // team colors
 	const [ logos, setLogos ] = useState(); // team logo
 
@@ -112,6 +114,12 @@ const DraftpicksPage = () => {
 			case '2017':
 				result = data2017;
 				break;
+			case '2018':
+				result = data2018;
+				break;
+			case '2019':
+				result = data2019;
+				break;
 		}
 		return result;
 	};
@@ -128,11 +136,13 @@ const DraftpicksPage = () => {
 		fetch(`https://waffl-archive-api.com/index/draftData/2015`).then((x) => x.json()).then((x) => setData2015(x));
 		fetch(`https://waffl-archive-api.com/index/draftData/2016`).then((x) => x.json()).then((x) => setData2016(x));
 		fetch(`https://waffl-archive-api.com/index/draftData/2017`).then((x) => x.json()).then((x) => setData2017(x));
+		fetch(`https://waffl-archive-api.com/index/draftData/2018`).then((x) => x.json()).then((x) => setData2018(x));
+		fetch(`https://waffl-archive-api.com/index/draftData/2019`).then((x) => x.json()).then((x) => setData2019(x));
 		fetch(`https://waffl-archive-api.com/index/colors`).then((x) => x.json()).then((x) => setColors(x));
 		fetch(`https://waffl-archive-api.com/index/logos`).then((x) => x.json()).then((x) => setLogos(x));
 	}, []);
 
-	if (!data2014 || !data2015 || !data2016 || !data2017 || !colors || !logos) {
+	if (!data2014 || !data2015 || !data2016 || !data2017 || !data2018 || !data2019 || !colors || !logos) {
 		return (
 			<Layout>
 				<h1>WAFFL Draft Pick Tracker</h1>
@@ -156,6 +166,12 @@ const DraftpicksPage = () => {
 					</h3>
 					<h3 className={selected.selected === '2017' ? 'active' : ''} onClick={(e) => switchDraft(e)}>
 						2017
+					</h3>
+					<h3 className={selected.selected === '2018' ? 'active' : ''} onClick={(e) => switchDraft(e)}>
+						2018
+					</h3>
+					<h3 className={selected.selected === '2019' ? 'active' : ''} onClick={(e) => switchDraft(e)}>
+						2019
 					</h3>
 				</Div>
 				<DraftYear

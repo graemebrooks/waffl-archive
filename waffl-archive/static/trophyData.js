@@ -41,6 +41,13 @@ const trophyData = {
 			logoUrl: 'https://i.imgur.com/lIRYULG.png',
 			content:
 				"WAFFL’s all-time unluckiest team (6.21 luck losses) had the run of their lifetime behind the pieces of a 4-year rebuild featuring 2017 draft studs, Patrick Mahomes and Michael Thomas. After an exciting playoff berth in 2018, the Cartels won a painfully low 18 games over the next 56 over her 4-year rebuild. Sitting at just 2-4 over the 2018’s first 6 games, it looked like another unlucky lost season for the Cartels. They responded by firing off 8 wins over the next 10, including a playoff run for the ages where she lost starters Keenan Allen and Aaron Jones to injury before they could even score a point in the first round against WAFFL’s all-time highest scoring regular season roster, the Digital Rays. After that unlikely victory, she was able to squash the defending-champion Not The Jets behind a 65 point combined effort out of mid-season acquisition Antonio Brown and Cartel-for-life Michael Thomas. The champions' seasonal lineup included: QB Patrick Mahomes (1st)... RB Chris Carson (13th)... RB Marlon Mack (19th)... WR Antonio Brown (5th)... WR Michael Thomas (9th)... WR Keenan Allen (12th)... TE Jimmy Graham (12th)... The Cartels scored 1952.28 points in 2018, 3rd in the league."
+		},
+		{
+			year: '2019',
+			team: 'Fort Sill Wenches',
+			logoUrl: 'https://i.imgur.com/qVAzfoj.png',
+			content:
+				"In 2019, the Wenches saw their first winning season in their WAFFL tenure, and boy did they make it count. The Wenches entered the year with the worst all-time winning percentage of active teams with just a 30-54 record over six years, but saw their win total increase by 40% over the course of their championship run. After a 1-2 start with both losses coming to bottom-three teams, the Wenches went on a winning streak of the ages and won 11 straight regular season games. That’s an active streak headed into the 2020 season and already the 2nd longest of all-time. The Wenches stomped on Not The Jets in round one with a 92 point victory (a WAFFL playoff record) and won the championship behind a 44.9 point effort from 2018 #1 overall pick Saquon Barkley. The future is very top-heavy in WAFFL at the moment, but the Wenches will firmly be in the conversation for championships in the short-term. The champions' seasonal lineup included: QB Dak Prescott (2nd)... RB Derrick Henry (4th)... RB Saquon Barkley (11th)... WR Kenny Golladay (6th)... WR Allen Robinson (11th)... WR Jarvis Landry (15th)... TE George Kittle (3rd)... The Wenches scored 1807.28 points in 2019, 3rd in the league."
 		}
 	],
 	wafflRunnerUp: [
@@ -85,6 +92,13 @@ const trophyData = {
 			logoUrl: 'https://i.imgur.com/q4j1M2D.png',
 			content:
 				'All aboard the Gurley train. The Not The Jets continued to ride on the success of their generational talent to 9 wins after last year’s herculean effort in the playoffs. Gurley was the all-time highest scoring running back on a per-game basis in 2018 but finished as the league’s RB2 overall after he was forced to miss Week 16 and 17 due to a balky knee. Yes, that’s Week 16, the championship game where Not The Jets were forced to go with literal NFL backup RB Alfred Blue in their 3rd championship appearance all-time. They suffered their first ever playoff loss (5-1 all-time) and decided to blow up the team that just went to back-to-back championships. Time will tell if this rebuild will be nearly as fast as the first one. Not The Jets scored 1789.24 points in the 2018 regular season, 4th best in the league.'
+		},
+		{
+			year: '2019',
+			team: 'Central Texas Islanders',
+			logoUrl: 'https://i.imgur.com/bDpjNeF.png',
+			content:
+				'The Islanders have had two great regular seasons in a row, going 17-11 but finishing 2nd in scoring both times, and in large part can thank 23 year-old running back Christian McCaffrey. The Islander superstar had the 8th best RB season of all-time in 2018 and the absolute best RB season of all-time in 2019 by a margin of 35 points! The ever-youthful Islanders still struggled with scheduling luck in 2019, posting 1.68 luck losses after 2018’s 1.67 luck losses. The team was able to put the bad breaks behind them in round one and take down the title’s super-favorite Cartels, but struggled with injuries and other bad luck in the championship game. The Islanders are the first team to win the 2nd place trophy twice, and unfortunately have failed to win 1st place once. The Islanders scored 1916.18 points in the 2019 regular season, 2nd best in the league.'
 		}
 	],
 	wafflThirdPlace: [
@@ -129,6 +143,13 @@ const trophyData = {
 			logoUrl: 'https://i.imgur.com/Je5Chs0.png',
 			content:
 				'The Riverside Digital Rays will go down as a special group that set the league ablaze in 2018 but failed at the worst of times. The Digital Rays scored more points in a regular season than any other team in the league’s history (2280.6) and set the record for the most points scored in a game (221.5 points in Week 10). They couldn’t pull off the elusive undefeated regular season but became just the 2nd team in history to win 13 games in a season next to the Ice Babies in 2014. This Digital Rays team had two top-5 RBs, three top-10 WRs and the 2nd best TE alongside league-best depth, but fell flat when the pressure came on as they lost in round one to the Cartels with early injuries to two key starters (even though the Digital Rays averaged 23.45 more PPG in the regular season). The Digital Rays remain one of the strongest favorites WAFFL has seen, but a 25-3 regular season record paired with a 1-2 playoff record over the last two years has been an all-time disappointment. The Digital Rays scored 2280.6 points in 2018, best in the league.'
+		},
+		{
+			year: '2019',
+			team: 'Cypress Mill Cartels',
+			logoUrl: 'https://i.imgur.com/lIRYULG.png',
+			content:
+				'The Cartels were a dominating force in 2019 though their 3rd place, 10-win finish doesn’t quite show it. In terms of PPG, at the top, she had the 2nd best QB in Patrick Mahomes, the 3rd and 4th best RBs in Dalvin Cook and Aaron Jones, and the top WR by a large margin in Michael Thomas, who set a league record with 156 catches. This team is young, has top-end talent throughout her starting line-up, and a team of low-end starters that ride the bench.Unfortunately, they couldn’t repeat as champions in 2019, but they were league leaders in scoring for the first time in WAFFL history and are 2020 championship favorites. The Cartels scored 2037.84 points in 2019, best in the league.'
 		}
 	],
 	mostSurprising: [
@@ -173,6 +194,13 @@ const trophyData = {
 			logoUrl: 'https://i.imgur.com/lIRYULG.png',
 			content:
 				'The Cartels won just 18 of 56 games (a 0.321 winning percentage) over the previous four seasons and picked up a league-high -755 luck score over the last 5 years. Despite the adversity, the Cartels rattled off 9 of their last 12 games on their way to a championship behind 3 elite wide receivers and the greatest fantasy season by a QB in history with Patrick Mahomes. Due to very early injury, Keenan Allen and Aaron Jones combined for 0.8 points in the Cartel’s playoff game against the Digital Rays that had been outscoring the Cartels by an average of 23.5 PPG during the regular season. In the most clutch of moments, the Cartels were still able to squeeze out 116.12 points with just 8 players, while the Digital Rays scored their second lowest point total of the season, despite 34 points for their K and DST. The Cartels managed to stomp the defending champion Not The Jets in the next round by 54.7 points and are champions after a 5-year playoff drought.'
+		},
+		{
+			year: '2019',
+			team: 'Fort Sill Wenches',
+			logoUrl: 'https://i.imgur.com/qVAzfoj.png',
+			content:
+				'The Wenches changed the narrative in 2019. Before the 2019 season, the Wenches had the worst record all-time, no winning seasons, the worst scoring team all-time, and the only team that had no playoff appearances ever. That team traded for Not The Jets legend Todd Gurley then went on to rattle off 11 straight regular season wins (2nd best streak all-time) and win both his playoff games in decisive fashion on his way to a WAFFL championship. The Wenches 2020 rise was predictable, but the magnitude was not. The Wenches may possibly be the easiest choice to win this award to date.'
 		}
 	],
 	mostDissapointing: [
@@ -217,6 +245,13 @@ const trophyData = {
 			logoUrl: 'https://i.imgur.com/KE0cDMD.png',
 			content:
 				'This is likely the only 3-peat we will ever see for this award, so when will the voters begin to fault themselves for setting expectations too high?? Jokes aside, the Ice Babies set a record in 2018 for the worst luck score over a 10 game span (-323), and started the season a league-low 1-6, essentially eliminating themselves from playoffs in the first half of the season. They lost 4 games by under 5 points. Le’Veon Bell sitting out this year perhaps single-handedly ruined the Ice Babies playoff hopes, as the team was dead last in Flex scoring this year. Regardless, the Ice Babies over the last two years have wasted away prime seasons of Julio Jones and AJ Green and have a very limited time to turn things around as the oldest team in WAFFL.'
+		},
+		{
+			year: '2019',
+			team: 'Rock Rose Digital Rays',
+			logoUrl: 'https://i.imgur.com/Je5Chs0.png',
+			content:
+				'Coming off the highest scoring regular season of all-time, expectations were inevitably going to be too high, but not even the boldest observers could have predicted that the 2-time scoring leader would finish 2019 in 8th place. Bad injury luck played a factor, with Drew Brees missing 5 games, Tyreek Hill missing 4 games, Alvin Kamara missing two games, TY Hilton missing 6 games, and Juju Smith-Schuster missing 4 games. The team also performed brutally inconsistently as well, with an average win margin of 42 and an average loss margin of 39. The Digital Rays simply failed to fill holes through the entire regular season, but in hindsight, the team’s reluctance to trade contributed to one of the most disappointing seasons in WAFFL history. The Digital Rays have not made a single trade in nearly two calendar years. The next longest trade drought (as of this writing) started in just Week 14 of the 2019.'
 		}
 	],
 	oldestTeam: [
@@ -225,42 +260,49 @@ const trophyData = {
 			team: 'Travis County Toad Lickers',
 			logoUrl: 'https://i.imgur.com/TpSQJZN.png',
 			content:
-				'Featuring old geezers such as TE Tony Gonzalez (37), WR Steve Smith (34), and WR Roddy White (32), the Toad Lickers had an average starter age of 29.9 despite finishing the season in dead last. Amazingly they pulled this feat off with a 24 year old QB in Andrew Luck.'
+				'Featuring old geezers such as TE Tony Gonzalez (37), WR Steve Smith (34), and WR Roddy White (32), the Toad Lickers had an average starter age of 30.51 despite finishing the season in dead last. Amazingly they pulled this feat off with a 24 year old QB in Andrew Luck.'
 		},
 		{
 			year: '2014',
 			team: 'Canyon Creek Chili Peppers',
 			logoUrl: 'https://i.imgur.com/a9jFlAW.png',
 			content:
-				'Featuring grandpas such as TE Antonio Gates (34), WR Larry Fitzgerald (31), and QB Tony Romo (34), the Chili Peppers put together a solid 12-2 campaign. The Chili Peppers have an interesting future ahead of them. They have four truly elite assets that put up truly elite numbers in 2014 (DeMarco Murray, Antonio Brown, Jordy Nelson and Jamaal Charles), but they win this award with the filler-talent that surrounds them. Fading talents in Tony Romo, Justin Forsett, Larry Fitzgerald, Antonio Gates and numerous reserve players could make the Chili Peppers a middle-tier team if they cannot have continued success with their old age. The Chili Peppers could be very strong again next season or begin a rebuilding process half way through. The Chili Peppers had an average starter age of 29.6.'
+				'Featuring grandpas such as TE Antonio Gates (34), WR Larry Fitzgerald (31), and QB Tony Romo (34), the Chili Peppers put together a solid 12-2 campaign. The Chili Peppers have an interesting future ahead of them. They have four truly elite assets that put up truly elite numbers in 2014 (DeMarco Murray, Antonio Brown, Jordy Nelson and Jamaal Charles), but they win this award with the filler-talent that surrounds them. Fading talents in Tony Romo, Justin Forsett, Larry Fitzgerald, Antonio Gates and numerous reserve players could make the Chili Peppers a middle-tier team if they cannot have continued success with their old age. The Chili Peppers could be very strong again next season or begin a rebuilding process half way through. The Chili Peppers had an average starter age of 29.56.'
 		},
 		{
 			year: '2015',
 			team: 'Canyon Creek Chili Peppers',
 			logoUrl: 'https://i.imgur.com/a9jFlAW.png',
 			content:
-				'Featuring elders such as TE Antonio Gates (35), WR Larry Fitzgerald (32), and QB Carson Palmer (36), the Chili Peppers were held back drastically by injuries all season long. Losing last year’s starters in Tony Romo, Jamaal Charles, Justin Forsett, and Jordy Nelson made the entire season an unfair fight. With no indication of beginning the rebuild process soon, the Chili Peppers can only hope that their hand is not forced into one. The Chili Peppers had an average starter age of 30.25.'
+				'Featuring elders such as TE Antonio Gates (35), WR Larry Fitzgerald (32), and QB Carson Palmer (36), the Chili Peppers were held back drastically by injuries all season long. Losing last year’s starters in Tony Romo, Jamaal Charles, Justin Forsett, and Jordy Nelson made the entire season an unfair fight. With no indication of beginning the rebuild process soon, the Chili Peppers can only hope that their hand is not forced into one. The Chili Peppers had an average starter age of 30.66.'
 		},
 		{
 			year: '2016',
-			team: 'Canyon Creek Chili Peppers',
-			logoUrl: 'https://i.imgur.com/a9jFlAW.png',
+			team: 'Austin Beer',
+			logoUrl: 'https://i.imgur.com/aTs50El.png',
 			content:
-				'Featuring senior citizens such as WR Larry Fitzgerald (33), TE Delanie Walker (32), and WR Jordy Nelson (31), the Chili Peppers ran away with this award in 2016 with so many young fantasy stars on the rise. Despite having no starters younger than 28, the Chili Pepper starters were dominant all year long but somehow only got better as the season went on. After being the oldest team for 3 straight years and having no young stars waiting in the wings, it’s fair to wonder if this success will continue, but the Chili Peppers won their title in 2016. The Chili Peppers had an average starter age of 29.71.'
+				'Featuring senior citizens such as RB Frank Gore (33), TE Greg Olsen (31), and K Adam Vinetari (31), Beer ran away with this award in 2016 with so many young fantasy stars on the rise. Beer had no starters younger than 28, and took a huge step back, going .500 after 2 straight playoff appearances. Time may be running out for this contender, as they had the oldest starting lineup in WAFFL history by a decent margin. Beer had an average starter age of 32.17.'
 		},
 		{
 			year: '2017',
 			team: 'Canyon Creek Chili Peppers',
 			logoUrl: 'https://i.imgur.com/a9jFlAW.png',
 			content:
-				'Featuring a Mount Rushmore of Chili Peppers such as WR Larry Fitzgerald (34), TE Delanie Walker (33), and WR Jordy Nelson (32), the Chili Peppers are fighting for this trophy to be named after them. Typically, a young QB like Wentz will throw you out of contention for the award but as history is proving, Chili Peppers never die. This team had every starter return from their championship and the only starter replaced was Kirk Cousins for Carson Wentz. Every other starter is 29 or older. The Chili Peppers had an average starter age of 29.63.'
+				'Featuring a Mount Rushmore of Chili Peppers such as WR Larry Fitzgerald (34), TE Delanie Walker (33), and WR Jordy Nelson (32), the Chili Peppers are fighting for this trophy to be named after them. Typically, a young QB like Wentz will throw you out of contention for the award but as history is proving, Chili Peppers never die. This team had every starter return from their championship and the only starter replaced was Kirk Cousins for Carson Wentz. Every other starter is 29 or older. The Chili Peppers had an average starter age of 30.94.'
 		},
 		{
 			year: '2018',
 			team: 'Cedar Park Ice Babies',
 			logoUrl: 'https://i.imgur.com/KE0cDMD.png',
 			content:
-				'Featuring the a graying group of RB Adrian Peterson (34), Matt Ryan (33), and AJ Green (30), WAFFL’s first dynasty is officially long in the tooth and is the only team other than the Beer that hasn’t put effort into a rebuild over the course of the league’s history. The Ice Babies don’t have anyone particularly old pushing this number up; this team simply has no young players. 26 year-old Davante Adams and 27-year old David Johnson were the only 2018 starters under 29 years old. With Rob Gronkowski retiring and the team moving on from Adrian Peterson, the Ice Babies will use 7 draft picks in 2019 and 2 first round picks in 2020 to inject some youth into this roster. The average Ice Baby starter was 29.75 years old.'
+				'Featuring the a graying group of RB Adrian Peterson (34), Matt Ryan (33), and AJ Green (30), WAFFL’s first dynasty is officially long in the tooth and is the only team other than the Beer that hasn’t put effort into a rebuild over the course of the league’s history. The Ice Babies don’t have anyone particularly old pushing this number up; this team simply has no young players. 26 year-old Davante Adams and 27-year old David Johnson were the only 2018 starters under 29 years old. With Rob Gronkowski retiring and the team moving on from Adrian Peterson, the Ice Babies will use 7 draft picks in 2019 and 2 first round picks in 2020 to inject some youth into this roster. The average Ice Baby starter was 30.04 years old.'
+		},
+		{
+			year: '2019',
+			team: 'Cedar Park Ice Babies',
+			logoUrl: 'https://i.imgur.com/KE0cDMD.png',
+			content:
+				'Featuring waning talents such as QB Matt Ryan (34), TE Jared Cook (32), and K Dan Bailey (31), the Ice Baby dynasty is now dead. It could’ve been announced dead years ago, considering they have no playoff berths since their 2016 championship appearance, but this team has officially stopped fighting for life. Almost all of the “2019 starters” that contribute to this old team were off the roster by Week 14. The Ice Babies will look to do a full reboot and will be in contention for 2020’s youngest team award. The average Ice Baby starter was 29.98 years old.'
 		}
 	],
 	youngestTeam: [
@@ -269,42 +311,49 @@ const trophyData = {
 			team: 'North Austin Wenches',
 			logoUrl: 'https://i.imgur.com/qVAzfoj.png',
 			content:
-				'Featuring babies like WR Keenan Allen (21), RB Giovanni Bernard (22), and K Justin Tucker (23), the Wenches have nice pieces to bring them out of the bottom three in the future. The average Wench starter was 24.0 years old.'
+				'Featuring babies like WR Keenan Allen (21), RB Giovanni Bernard (22), and K Justin Tucker (23), the Wenches have nice pieces to bring them out of the bottom three in the future. The average Wench starter was 24.53 years old.'
 		},
 		{
 			year: '2014',
-			team: 'Travis County Toad Lickers',
-			logoUrl: 'https://i.imgur.com/TpSQJZN.png',
+			team: 'East Lubbock Islanders',
+			logoUrl: 'https://i.imgur.com/bDpjNeF.png',
 			content:
-				"Featuring kiddos like WR DeAndre Hopkins (22), WR Michael Floyd (25), and RB Denard Robinson (24), the Toad Lickers made a complete 180 as they were last season's oldest starting lineup. The Toad Lickers astonishingly win this trophy with only one starting rookie, RB Carlos Hyde. The average Toad Licker starter was 24.2 years old."
+				'Featuring kiddos like WR Mike Evans (21), WR Sammy Watkins (21), and WR Odell Beckham (22), the Islanders left their 2013 championship appearance looking to get younger across the board. The Islanders loaded up on rookies and had only two returning starters from their runner-up 2013 team, Russell Wilson and Phil Dawson. The average Islander starter was 25.74 years old.'
 		},
 		{
 			year: '2015',
 			team: 'Central Texas Islanders',
 			logoUrl: 'https://i.imgur.com/bDpjNeF.png',
 			content:
-				'Featuring toddlers like WR Sammy Watkins (22), WR Mike Evans (22), and WR Odell Beckham (23), the Islanders are clearly looking into the future, despite the lack of draft picks. Despite finishing last in the league in 2015, they are on track for future success and are embracing the rebuild strategy fully. The average Islander starter was 23.9 years old.'
+				'Featuring toddlers like WR Sammy Watkins (22), WR Mike Evans (22), and WR Odell Beckham (23), the Islanders are clearly looking into the future, despite the lack of draft picks. Despite finishing last in the league in 2015, they are on track for future success and are embracing the rebuild strategy fully. The average Islander starter was 25.7 years old.'
 		},
 		{
 			year: '2016',
 			team: 'Central Texas Islanders',
 			logoUrl: 'https://i.imgur.com/bDpjNeF.png',
 			content:
-				'Featuring boys like WR Mike Evans (23), RB Jay Ajayi (23), and TE Eric Ebron (23), the Islanders take this award for the 2nd year, without a single non-QB starter over 24 years old. Unlike their 2015 campaign, the Islanders found the complimentary pieces to rise from last place to 2nd seed in the playoffs. This youth/success combination makes this team a potential future dynasty entering the 2017 offseason. The average Islander starter was 24.1 years old.'
+				'Featuring boys like WR Mike Evans (23), RB Jay Ajayi (23), and TE Eric Ebron (23), the Islanders take this award for the 2nd year, without a single non-QB starter over 24 years old. Unlike their 2015 campaign, the Islanders found the complimentary pieces to rise from last place to 2nd seed in the playoffs. This youth/success combination makes this team a potential future dynasty entering the 2017 offseason. The average Islander starter was 24.31 years old.'
 		},
 		{
 			year: '2017',
 			team: 'Champaign Wenches',
 			logoUrl: 'https://i.imgur.com/qVAzfoj.png',
 			content:
-				'Featuring young bucks like QB Dak Prescott (24), RB Derrick Henry (24), and WR Stefon Diggs (24), the Wenches began to change their ways after being the only team to never make playoffs after the 2016 season. Amazingly, this team has 8 picks in the top 20 of the 2018 rookie draft. We could see a multi-year run with this award by the Wenches. The average Wench starter was 24.4 years old.'
+				'Featuring young bucks like QB Dak Prescott (24), RB Derrick Henry (24), and WR Stefon Diggs (24), the Wenches began to change their ways after being the only team to never make playoffs after the 2016 season. Amazingly, this team has 8 picks in the top 20 of the 2018 rookie draft. We could see a multi-year run with this award by the Wenches. The average Wench starter was 24.93 years old.'
 		},
 		{
 			year: '2018',
 			team: 'Champaign Wenches',
 			logoUrl: 'https://i.imgur.com/qVAzfoj.png',
 			content:
-				'Featuring young bois such as RB Saquon Barkley (22), QB Dak Prescott (25), and RB Derrick Henry (25), the Wenches rolled into 2018 with a the same young team but even more rookies than before. The Wenches have been stockpiling young assets over the last couple of years and finally are seeing it pay off with their best record ever (7-7) and deep pockets of young, promising talent. Expect the Wenches to make some winning moves and contend for their first ever playoff spot in 2019. The average Wench starter was 25.25 years old'
+				'Featuring young bois such as RB Saquon Barkley (22), QB Dak Prescott (25), and RB Derrick Henry (25), the Wenches rolled into 2018 with a the same young team but even more rookies than before. The Wenches have been stockpiling young assets over the last couple of years and finally are seeing it pay off with their best record ever (7-7) and deep pockets of young, promising talent. Expect the Wenches to make some winning moves and contend for their first ever playoff spot in 2019. The average Wench starter was 25.37 years old.'
+		},
+		{
+			year: '2019',
+			team: 'Anderson High Not The Jets',
+			logoUrl: 'https://i.imgur.com/q4j1M2D.png',
+			content:
+				'Featuring rug rats such as WR DK Metcalf (21), WR Michael Gallup (23) and RB Marlon Mack (23), Not The Jets are beginning to establish a trend. They go into a rebuild every time they sniff the championship. A huge reason for this year’s youthful infusion was the blockbuster trade that shipped off Todd Gurley (may his jersey hang in the rafters of Anderson High forever). Not The Jets had tons of new young players and lots of new draft picks to spend. At first, they ran into an incredibly cold start, going 1-5, but they won 7 of their next 8 games for a playoff berth. No Cinderella story this year, but Not The Jets have to be excited about their future with their youngest team ever by far. The average Not Jet was 24.55 years old.'
 		}
 	],
 	analyticalRon: [
@@ -349,6 +398,13 @@ const trophyData = {
 			logoUrl: 'https://i.imgur.com/lLmmaih.png',
 			content:
 				'The Nadoes had only the 9th most optimal points this season AND was 9th in total points scored. 719.22 points were left on the bench this season. This marks the first time that 700+ points were left on the bench in WAFFL history.'
+		},
+		{
+			year: '2019',
+			team: 'California Chili Peppers',
+			logoUrl: 'https://i.imgur.com/a9jFlAW.png',
+			content:
+				'The Chili Peppers had the 6th most optimal points this season but was 10th in total points scored. 690.44 points were left on the bench this season.'
 		}
 	],
 	biggestVictory: [
@@ -393,6 +449,13 @@ const trophyData = {
 			logoUrl: 'https://i.imgur.com/bDpjNeF.png',
 			content:
 				'The Islanders beat down the Chili Peppers with a WAFFL record margin of victory, 176.16 – 59.64 in Week 7, a 116.52 point victory. The record was set on a MNF Eli Manning to Odell Beckham Jr. touchdown where the Islanders were starting both players.'
+		},
+		{
+			year: '2019',
+			team: 'Cypress Mill Cartels',
+			logoUrl: 'https://i.imgur.com/lIRYULG.png',
+			content:
+				'The Cartels beat down the Toad Lickers 200.66 - 95.98 in Week 3, a 104.68 margin of victory. For the first 3 weeks of the season, the Cartels led all of WAFFL in scoring each of those weeks. They’d go on to do that 6 times in 2019.'
 		}
 	],
 	worstLoss: [
@@ -437,6 +500,13 @@ const trophyData = {
 			logoUrl: 'https://i.imgur.com/a9jFlAW.png',
 			content:
 				'The Chili Peppers fell to the Islanders more than anyone ever fell to another, 59.64 - 176.16 in Week 7, a 116.52 point defeat. That’s a WAFFL record, but spectacularly, the Chili Peppers got a hold of both first place and second place all-time in this category when they lost 86.86 to 194.66 to the Digital Rays in Week 1 of the same season.'
+		},
+		{
+			year: '2019',
+			team: 'Travis County Toad Lickers',
+			logoUrl: 'https://i.imgur.com/TpSQJZN.png',
+			content:
+				'The Toad Lickers fell victim to the highest score of the season when they played the Cartels in Week 3, losing 95.98 - 200.66. The Toad Lickers responded well and won 3 of their next 4 games, but ended up falling just short of playoffs for the second straight season.'
 		}
 	],
 	bestRecord: [
@@ -475,6 +545,12 @@ const trophyData = {
 			team: 'Riverside Digital Rays',
 			logoUrl: 'https://i.imgur.com/Je5Chs0.png',
 			content: 'Awarded to the team with the best regular season record. Record: 13-1'
+		},
+		{
+			year: '2019',
+			team: 'Fort Sill Wenches',
+			logoUrl: 'https://i.imgur.com/qVAzfoj.png',
+			content: 'Awarded to the team with the best regular season record. Record: 12-2'
 		}
 	],
 	totalPointLeader: [
@@ -513,6 +589,12 @@ const trophyData = {
 			team: 'Riverside Digital Rays',
 			logoUrl: 'https://i.imgur.com/Je5Chs0.png',
 			content: 'Awarded to the team with the most total points for the season 2280.6 points'
+		},
+		{
+			year: '2019',
+			team: 'Cypress Mill Cartels',
+			logoUrl: 'https://i.imgur.com/lIRYULG.png',
+			content: 'Awarded to the team with the most total points for the season 2,037.84 points'
 		}
 	],
 	fewestTotalPoints: [
@@ -551,6 +633,12 @@ const trophyData = {
 			team: 'Canyon Creek Chili Peppers',
 			logoUrl: 'https://i.imgur.com/a9jFlAW.png',
 			content: 'Awarded to the team with the fewest total points for the season. 1188.88 points'
+		},
+		{
+			year: '2019',
+			team: 'Canyon Creek Chili Peppers',
+			logoUrl: 'https://i.imgur.com/a9jFlAW.png',
+			content: 'Awarded to the team with the fewest total points for the season. 1462.48 points'
 		}
 	],
 	thirdLast: [
@@ -595,6 +683,13 @@ const trophyData = {
 			logoUrl: 'https://i.imgur.com/TpSQJZN.png',
 			content:
 				'The Toad Lickers unfortunately come away with this trophy for the 3rd time in WAFFL’s six years. After two years of rebuilds, picking up Melvin Gordon, Amari Cooper, and Jordan Howard, the Toad Lickers were the T-3rd winningest team in WAFFL in the 2016 and 2017 seasons. The Toad Lickers saw 2 playoff appearances over that span as well. This year, the wheels fell off as they were only able to muster 5 wins. Multiple factors led to this stinker of a year… the Toad Lickers easily boasted the most difficult schedule and they failed to draft a different maker over the last two drafts (other than 4th round pick Kenny Golladay who was traded away in the preseason). The Toad Lickers clearly hope to sneak back into playoffs in 2019, but it’s difficult to see their roster finishing in the top 4 by season’s end. The Toad Lickers finished with a 5-9 record, averaging 123.62 points per week.'
+		},
+		{
+			year: '2019',
+			team: 'Rock Rose Digital Rays',
+			logoUrl: 'https://i.imgur.com/Je5Chs0.png',
+			content:
+				'In what will go down as one of the most disappointing single-season declines, the Digital Rays went from leading WAFFL in scoring, to repeating as points leader and breaking the single-season points record, to a 5-win/8th place finish in 2019. They led WAFFL in bad scheduling luck (2.12 luck losses) and always seemed to have 1 or 2 starters out with a minor injury. Despite the nightmare season, the Digital Rays go into 2020 as a top-2 team in dynasty value and will be fully expected to contend for titles for a few more seasons. This likely ends up being a single dip in an impressive era for the Digital Rays, but that dip was tremendous. The Digital Rays finished with a 5-9 record, averaging 123.55 points per week.'
 		}
 	],
 	secondLast: [
@@ -635,10 +730,17 @@ const trophyData = {
 		},
 		{
 			year: '2018',
-			team: 'South Lubbock Toad Lickers',
-			logoUrl: 'https://i.imgur.com/TpSQJZN.png',
+			team: 'Wichita Falls Nadoes',
+			logoUrl: 'https://i.imgur.com/lLmmaih.png',
 			content:
 				'Three straight 7-win campaigns kept this team from earning one of these last place trophies, but their scoring over the last 4 years has placed, 7th, 8th, 6th, and 9th. The Nadoes really haven’t been able to build much momentum from the atrocious roster and draft capital left behind by the Librarians. With lots of young depth on the roster from the last 4 draft classes but no real difference makers, the Nadoes are in purgatory for the next season or two. They can hopefully unload some of these young assets at good value, but there’s no real direction for this team at the moment. The Nadoes went 4-10, averaging 104.52 points per week.'
+		},
+		{
+			year: '2019',
+			team: 'Wichita Falls Nadoes',
+			logoUrl: 'https://i.imgur.com/lLmmaih.png',
+			content:
+				'The Nadoes will repeat at 9th place in what will end up being the farewell season for the 5-year franchise. The Nadoes will always be remembered for their shockingly unlikely 2015 championship appearance, but the team has been left in steady decline since. They leave WAFFL with records of 7-7, 7-7, 7-7, 4-10, 5-9. They leave behind a youthful team with no stars, and a #1 overall pick for Sean Van Hoose. The Nadoes went 5-9, averaging 105.89 points per week.'
 		}
 	],
 	theBitch: [
@@ -683,6 +785,13 @@ const trophyData = {
 			logoUrl: 'https://i.imgur.com/a9jFlAW.png',
 			content:
 				'The Chili Peppers in a single season took 8.1% off their all-time winning percentage and increased their all-time loss total by 46%. That’s just how good this team was over WAFFL’s first 5 years, and just how awful their tanking season was this year. The Chili Peppers tied the record for most losses in a season (12) and set the record for fewest points in a season (1188.88) set by the Wenches last year. One the good side of things, this team enters the next two draft classes with 3 picks in each of the first two rounds. They have the foundation for a rebuild and a competent owner to bring this team to relevance again, but it looks like they have at least a couple seasons of misery left. The Chili Peppers finished 2-12, averaging an all-time worst 84.92 points per game.'
+		},
+		{
+			year: '2019',
+			team: 'Canyon Creek Chili Peppers',
+			logoUrl: 'https://i.imgur.com/a9jFlAW.png',
+			content:
+				'The once dominant force unsurprisingly finishes in last place for the 2nd year in a row. Fortunately, the team has a fantastic rookie class that surely brightens the future of this team. #1 pick Josh Jacobs finishes as a RB2 as a rookie, #5 pick AJ Brown finished as the WR14, and both WR Deebo Samuel and WR Diontae Johnson had top-tier rookie seasons. The biggest scar left by the 2019 season is that he finished last in scoring, but was only 5th worst in optimal lineup, killing his bid for a top-3 pick in 2020. You could spin that to say his youth surprisingly overperformed to his own detriment. If the Chili Peppers can continue to compile young talent, they should be able to shake the rebuild and have one of the deepest young rosters in WAFFL. The Chili Peppers finished 4-10, averaging 104.46 points per game (up 20 points from last season).'
 		}
 	]
 };
