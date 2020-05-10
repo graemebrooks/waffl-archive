@@ -15,14 +15,29 @@ const Div = styled.div`
 		list-style-type: none;
 	}
 
+	.yearFormat {
+		display: ${(props) => (props.format === 'By Award' ? 'block' : 'none')};
+	}
+
+	.teamFormat {
+		width: 80%;
+		margin: 0 auto;
+		display: ${(props) => (props.format === 'By Team' ? 'block' : 'none')};
+
+		.teamCase {
+			width: 70%;
+			margin: 0 auto;
+		}
+	}
+
 	.formatSelect {
-		width: 50vw;
+		width: 70vw;
 		height: 6vh;
 		background: #213642;
 		display: flex;
 		justify-content: center;
 		cursor: pointer;
-		margin-bottom: 2rem;
+		margin: 2rem auto;
 
 		h3 {
 			display: flex;
@@ -78,6 +93,17 @@ const Div = styled.div`
 			img {
 				margin: 0;
 				max-height: 3rem;
+			}
+		}
+	}
+
+	@media (max-width: 700px) {
+		.teamFormat {
+			width: 90vw;
+			margin: 0;
+			.teamCase {
+				width: 90vw;
+				margin: 0;
 			}
 		}
 	}
@@ -175,7 +201,7 @@ const TrophyCasePage = () => {
 	return (
 		<Layout>
 			<h1>WAFFL Trophy Case</h1>
-			<Div>
+			<Div format={selectedFormat}>
 				<div className="formatSelect">
 					<h3 className={selectedFormat === 'By Award' ? 'active' : ''} onClick={(e) => switchFormat(e)}>
 						By Award
@@ -347,6 +373,52 @@ const TrophyCasePage = () => {
 							title={selectedAward}
 							imageUrl={getAwardData(selectedAward).logoUrl}
 						/>
+					</div>
+				</div>
+				<div className="teamFormat">
+					<div className="teamCase">
+						<h1>Beer</h1>
+						<img src="https://i.imgur.com/NvhSHgi.png" alt="Beer Trophy Case" />
+					</div>
+					<div className="teamCase">
+						<h1>Cartels</h1>
+						<img src="https://i.imgur.com/06UurBy.png" alt="Cartels Trophy Case" />
+					</div>
+					<div className="teamCase">
+						<h1>Chili Peppers</h1>
+						<img src="https://i.imgur.com/UP92FCl.png" alt="Chili Peppers Trophy Case" />
+					</div>
+					<div className="teamCase">
+						<h1>Digital Rays</h1>
+						<img src="https://i.imgur.com/1NCvHJS.png" alt="Digital Rays Trophy Case" />
+					</div>
+					<div className="teamCase">
+						<h1>Ice Babies</h1>
+						<img src="https://i.imgur.com/vLrilVk.png" alt="Ice Babies Trophy Case" />
+					</div>
+					<div className="teamCase">
+						<h1>Islanders</h1>
+						<img src="https://i.imgur.com/COimEYE.png" alt="Islanders Trophy Case" />
+					</div>
+					<div className="teamCase">
+						<h1>Librarians</h1>
+						<img src="https://i.imgur.com/cOe3sDr.png" alt="Librarians Trophy Case" />
+					</div>
+					<div className="teamCase">
+						<h1>Nadoes</h1>
+						<img src="https://i.imgur.com/jrXKrJa.png" alt="Nadoes Trophy Case" />
+					</div>
+					<div className="teamCase">
+						<h1>Not The Jets</h1>
+						<img src="https://i.imgur.com/TmyC6jk.png" alt="Not The Jets Trophy Case" />
+					</div>
+					<div className="teamCase">
+						<h1>Toad Lickers</h1>
+						<img src="https://i.imgur.com/a6ZIIlU.png" alt="Toad Lickers Trophy Case" />
+					</div>
+					<div className="teamCase">
+						<h1>Wenches</h1>
+						<img src="https://i.imgur.com/PxYJand.png" alt="Wenches Trophy Case" />
 					</div>
 				</div>
 			</Div>
