@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 //styles
 const Div = styled.div`
-	width: 70vw;
+	width: 80vw;
 	display: flex;
 	flex-direction: column;
 	background: #2d4059;

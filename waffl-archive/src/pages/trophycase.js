@@ -15,12 +15,16 @@ const Div = styled.div`
 		list-style-type: none;
 	}
 
+	h1 {
+		margin: 1rem;
+	}
+
 	.yearFormat {
 		display: ${(props) => (props.format === 'By Award' ? 'block' : 'none')};
 	}
 
 	.teamFormat {
-		width: 80%;
+		width: 70vw;
 		margin: 0 auto;
 		display: ${(props) => (props.format === 'By Team' ? 'block' : 'none')};
 
@@ -49,7 +53,7 @@ const Div = styled.div`
 			margin: 0;
 			background: #213642;
 
-			font-family: 'Source Sans Pro', sans-serif;
+			font-family: 'Cairo', sans-serif;
 		}
 
 		.active {
@@ -60,6 +64,7 @@ const Div = styled.div`
 	.yearContainer {
 		background: #213642;
 		display: flex;
+		width: 70vw;
 
 		.activeAward {
 			padding: 0.5rem;
@@ -98,6 +103,9 @@ const Div = styled.div`
 	}
 
 	@media (max-width: 700px) {
+		.yearContainer {
+			width: 100vw;
+		}
 		.teamFormat {
 			width: 90vw;
 			margin: 0;
@@ -200,8 +208,8 @@ const TrophyCasePage = () => {
 
 	return (
 		<Layout>
-			<h1>WAFFL Trophy Case</h1>
 			<Div format={selectedFormat}>
+			<h1>WAFFL Trophy Case</h1>
 				<div className="formatSelect">
 					<h3 className={selectedFormat === 'By Award' ? 'active' : ''} onClick={(e) => switchFormat(e)}>
 						By Award

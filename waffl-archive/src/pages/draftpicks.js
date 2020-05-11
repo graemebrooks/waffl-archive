@@ -9,8 +9,9 @@ import DraftYear from '../components/draftYear/draftYear';
 
 // styles
 const Div = styled.div`
-	width: 100%;
+	max-width: 100vw;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	cursor: pointer;
 
@@ -26,7 +27,7 @@ const Div = styled.div`
 		margin: 0;
 		background: #213642;
 
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Cairo', sans-serif;
 	}
 
 	.active {

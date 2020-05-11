@@ -1,9 +1,22 @@
 .container {
-	max-width: 80vw;
-	max-height: 80vh;
+	max-width: 30vw;
+	max-height: 40vh;
+	margin: 0 auto;
 }
 
 .swiper {
-	max-width: 80vw;
-	max-height: 80vh;
+	max-width: 30vw;
+	max-height: 40vh;
+}
+
+@media (max-width: 700px) {
+	.container {
+		max-width: 80vw;
+		max-height: 80vh;
+	}
+
+	.swiper {
+		max-width: 80vw;
+		max-height: 80vh;
+	}
 }

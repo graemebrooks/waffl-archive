@@ -38,7 +38,7 @@ const Div = styled.div`
 			margin: 0;
 			background: #213642;
 
-			font-family: 'Source Sans Pro', sans-serif;
+			font-family: 'Cairo', sans-serif;
 		}
 
 		.active {
