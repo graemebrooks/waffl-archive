@@ -38,8 +38,11 @@
 $breakpoint-mobile: 480px;
 @media (max-width: $breakpoint-mobile) {
 	.content {
+		padding: 0;
+
 		.logoBox {
-			max-width: 80%;
+			max-width: 100%;
+			background: #222831;
 
 			img {
 				max-height: 15%;

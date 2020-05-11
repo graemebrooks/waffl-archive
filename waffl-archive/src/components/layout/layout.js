@@ -13,7 +13,7 @@ import Header from '../header/header';
 
 const Layout = (props) => {
 	return (
-		<div className={layoutStyles.index}>
+		<div className={layoutStyles.index} id="outer-container">
 			<Helmet
 				meta={[
 					{
@@ -35,8 +35,8 @@ const Layout = (props) => {
 			>
 				<script src="https://kit.fontawesome.com/7046b37ec7.js" crossorigin="anonymous" />
 			</Helmet>
-			<Header />
-			<div className={layoutStyles.container}>
+			<Header outerContainerId={'outer-container'} pageWrapId={'page-wrap'} />
+			<div className={layoutStyles.container} id="page-wrap">
 				<div className={layoutStyles.content}>{props.children}</div>
 				{/* <Footer /> */}
 			</div>

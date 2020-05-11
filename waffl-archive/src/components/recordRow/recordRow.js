@@ -7,7 +7,7 @@ import RecordUnit from '../recordUnit/recordUnit';
 
 // styles
 const Div = styled.div`
-	width: 90vw;
+	width: 70vw;
 	padding: .5rem;
 
 	display: flex;
@@ -53,6 +53,8 @@ const Div = styled.div`
 	}
 
 	@media (max-width: 480px) {
+		width: 90vw;
+
 		.rowHeader {
 			display: flex;
 			flex-direction: column;

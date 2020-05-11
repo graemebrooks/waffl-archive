@@ -22,3 +22,11 @@ h2,
 h3 {
 	font-family: 'Cairo', sans-serif;
 }
+
+$breakpoint-mobile: 480px;
+@media (max-width: $breakpoint-mobile) {
+	.container {
+		padding: 0.25rem;
+		margin-top: 5rem;
+	}
+}
