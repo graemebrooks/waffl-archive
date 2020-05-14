@@ -4,6 +4,8 @@ import JamaalCharles from '../../../static/hof-images/jamaalCharles.png';
 import MattForte from '../../../static/hof-images/mattForte.png';
 import RobGronkowski from '../../../static/hof-images/robGronkowski.png';
 import DemarcoMurray from '../../../static/hof-images/demarcoMurray.png';
+import MarshawnLynch from '../../../static/hof-images/marshawnLynch.png';
+import DezBryant from '../../../static/hof-images/dezBryant.png';
 
 const hofImages = {
 	CalvinJohnson,
@@ -11,7 +13,9 @@ const hofImages = {
 	JamaalCharles,
 	MattForte,
 	RobGronkowski,
-	DemarcoMurray
+	DemarcoMurray,
+	MarshawnLynch,
+	DezBryant
 };
 
 export default hofImages;
