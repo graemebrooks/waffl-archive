@@ -38,6 +38,12 @@ const SwiperCarousel = () => {
 				<div className={swiperStyles.swiperItem}>
 					<img alt="Demarco Murray" src={hofImages.DemarcoMurray} />
 				</div>
+				<div className={swiperStyles.swiperItem}>
+					<img alt="Marshawn Lynch" src={hofImages.MarshawnLynch} />
+				</div>
+				<div className={swiperStyles.swiperItem}>
+					<img alt="Dez Bryant" src={hofImages.DezBryant} />
+				</div>
 			</Swiper>
 		</div>
 	);
