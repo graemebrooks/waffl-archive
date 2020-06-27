@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+//components
+import PBPradarChart from '../PBPradarChart/PBPradarChart';
+import MapChart from '../mapChart/MapChart';
+
 //styles
 import statbookTeamStyles from './statbookTeam.module.scss';
 
@@ -26,12 +30,19 @@ const Div = styled.div`
 	}
 
 	.teamDrawer {
-		display: none;
+		display: flex;
+		flex-direction: column;
 		width: 100%;
 		height: 0%;
 		background: ${(props) => props.secondaryColor};
 		color: black;
 		margin: 0;
+		justify-content: space-between;
+	}
+
+	.seasonStats {
+		width: 100%;
+		display: flex;
 		justify-content: space-between;
 	}
 
@@ -60,7 +71,7 @@ const Div = styled.div`
 	}
 `;
 
-const StatbookTeam = ({ team }) => {
+const StatbookTeam = ({ team, PBPData, primaryColor }) => {
 	const [ teamDrawerState, setTeamDrawerState ] = useState({ isOpen: false });
 
 	const toggleDrawer = () => {
@@ -107,24 +118,30 @@ const StatbookTeam = ({ team }) => {
 				}}
 				transition={{ duration: 2, ease: 'easeOut' }}
 			>
-				<div className="statColumn">
-					<h3>Winning Seasons - {team.Seasons.winning}</h3>
-					<h3>Losing Seasons - {team.Seasons.losing}</h3>
-				</div>
-				<div className="statColumn">
-					<h3>Best Season</h3>
-					<p>
-						{team.bestSeason.record} - {team.bestSeason.year}
-					</p>
-					<h3>Worst Season</h3>
-					<p>
-						{team.worstSeason.record} - {team.worstSeason.year}
-					</p>
-				</div>
+				<div className="seasonStats">
+					<div className="statColumn">
+						<h3>Winning Seasons - {team.Seasons.winning}</h3>
+						<h3>Losing Seasons - {team.Seasons.losing}</h3>
+					</div>
+					<div className="statColumn">
+						<h3>Best Season</h3>
+						<p>
+							{team.bestSeason.record} - {team.bestSeason.year}
+						</p>
+						<h3>Worst Season</h3>
+						<p>
+							{team.worstSeason.record} - {team.worstSeason.year}
+						</p>
+					</div>
 
-				<div className="statColumn">
-					<h3>Longest Win Streak: {team.longestWinStreak}</h3>
-					<h3>Longest Loss Streak: {team.longestLossStreak}</h3>
+					<div className="statColumn">
+						<h3>Longest Win Streak: {team.longestWinStreak}</h3>
+						<h3>Longest Loss Streak: {team.longestLossStreak}</h3>
+					</div>
+				</div>
+				<div>
+					<PBPradarChart PBPData={PBPData} primaryColor={primaryColor} team={team.teamName} />
+					<MapChart primary={team.colors.primary} secondary={team.colors.secondary} team={team.teamName} />
 				</div>
 			</motion.div>
 		</Div>
