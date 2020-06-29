@@ -82,14 +82,16 @@ const TeamRecordChart = ({ teamRecordData, team, primaryColor, secondaryColor })
 					<Tooltip />
 					<Legend />
 					<CartesianGrid stroke={primaryColor} fill="#FFFFFF" />
-					<ReferenceLine y={1830} stroke="red" strokeDasharray="3 3" yAxisId="left">
-						<Label position="left">80th %</Label>
+					<ReferenceLine y={1830} stroke="green" strokeDasharray="3 3" yAxisId="left">
+						<Label stroke="green" position="right">
+							80th %
+						</Label>
 					</ReferenceLine>
-					<ReferenceLine y={1675} stroke="red" strokeDasharray="3 3" yAxisId="left">
-						<Label position="left">50th %</Label>
-					</ReferenceLine>
+					<ReferenceLine y={1675} stroke="black" strokeDasharray="3 3" yAxisId="left" />
 					<ReferenceLine y={1540} stroke="red" strokeDasharray="3 3" yAxisId="left">
-						<Label position="left">20th %</Label>
+						<Label stroke="red" position="right">
+							20th %
+						</Label>
 					</ReferenceLine>
 					<Bar dataKey="Wins" barSize={20} fill={primaryColor} yAxisId="right" />
 					<Line type="monotone" dataKey="Points Scored" stroke="#17b978" yAxisId="left" />
