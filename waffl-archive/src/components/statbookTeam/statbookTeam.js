@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 //components
 import PBPradarChart from '../PBPradarChart/PBPradarChart';
 import MapChart from '../mapChart/MapChart';
+import TeamRecordChart from '../teamRecordChart/teamRecordChart';
 
 //styles
 import statbookTeamStyles from './statbookTeam.module.scss';
@@ -12,6 +13,8 @@ import statbookTeamStyles from './statbookTeam.module.scss';
 const Div = styled.div`
 	display: flex;
 	flex-direction: column;
+
+	width: 70vw;
 
 	h4 {
 		color: ${(props) => props.secondaryColor};
@@ -40,16 +43,11 @@ const Div = styled.div`
 		justify-content: space-between;
 	}
 
-	.seasonStats {
+	.charts {
 		width: 100%;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.statColumn {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
+		display: grid;
+		grid-template-columns: 3fr 5fr;
+		margin: 0;
 	}
 
 	@media (max-width: 700px) {
@@ -71,7 +69,7 @@ const Div = styled.div`
 	}
 `;
 
-const StatbookTeam = ({ team, PBPData, primaryColor }) => {
+const StatbookTeam = ({ team, teamPBP, teamRecordData, primaryColor }) => {
 	const [ teamDrawerState, setTeamDrawerState ] = useState({ isOpen: false });
 
 	const toggleDrawer = () => {
@@ -118,31 +116,20 @@ const StatbookTeam = ({ team, PBPData, primaryColor }) => {
 				}}
 				transition={{ duration: 2, ease: 'easeOut' }}
 			>
-				<div className="seasonStats">
-					<div className="statColumn">
-						<h3>Winning Seasons - {team.Seasons.winning}</h3>
-						<h3>Losing Seasons - {team.Seasons.losing}</h3>
+				<div className="charts">
+					<div>
+						<PBPradarChart teamPBP={teamPBP} primaryColor={primaryColor} team={team.teamName} />
 					</div>
-					<div className="statColumn">
-						<h3>Best Season</h3>
-						<p>
-							{team.bestSeason.record} - {team.bestSeason.year}
-						</p>
-						<h3>Worst Season</h3>
-						<p>
-							{team.worstSeason.record} - {team.worstSeason.year}
-						</p>
-					</div>
-
-					<div className="statColumn">
-						<h3>Longest Win Streak: {team.longestWinStreak}</h3>
-						<h3>Longest Loss Streak: {team.longestLossStreak}</h3>
+					<div>
+						<TeamRecordChart
+							teamRecordData={teamRecordData}
+							primaryColor={primaryColor}
+							team={team.teamName}
+							secondary={team.colors.secondary}
+						/>
 					</div>
 				</div>
-				<div>
-					<PBPradarChart PBPData={PBPData} primaryColor={primaryColor} team={team.teamName} />
-					<MapChart primary={team.colors.primary} secondary={team.colors.secondary} team={team.teamName} />
-				</div>
+				<MapChart primary={team.colors.primary} secondary={team.colors.secondary} team={team.teamName} />
 			</motion.div>
 		</Div>
 	);
