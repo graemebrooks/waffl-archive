@@ -10,7 +10,8 @@ import {
 	Bar,
 	Line,
 	ReferenceLine,
-	ResponsiveContainer
+	ResponsiveContainer,
+	Label
 } from 'recharts';
 
 import convertName from '../../../services/convertTeamName';
@@ -75,17 +76,23 @@ const TeamRecordChart = ({ teamRecordData, team, primaryColor, secondaryColor })
 		<Div>
 			<ResponsiveContainer width="100%" height={500}>
 				<ComposedChart data={data}>
-					<XAxis dataKey="season" />
-					<YAxis type="number" domain={[ 1100, 2300 ]} orientation="right" yAxisId="left" />
-					<YAxis type="number" domain={[ 0, 14 ]} orientation="left" yAxisId="right" />
+					<XAxis dataKey="season" stroke="#000000" />
+					<YAxis type="number" domain={[ 1100, 2300 ]} orientation="right" yAxisId="left" stroke="#000000" />
+					<YAxis type="number" domain={[ 0, 14 ]} orientation="left" yAxisId="right" stroke="#000000" />
 					<Tooltip />
 					<Legend />
 					<CartesianGrid stroke={primaryColor} fill="#FFFFFF" />
-					<ReferenceLine y={1830} label="Max" stroke="red" strokeDasharray="3 3" yAxisId="left" />
-					<ReferenceLine y={1675} label="Max" stroke="red" strokeDasharray="3 3" yAxisId="left" />
-					<ReferenceLine y={1540} label="Max" stroke="red" strokeDasharray="3 3" yAxisId="left" />
+					<ReferenceLine y={1830} stroke="red" strokeDasharray="3 3" yAxisId="left">
+						<Label position="left">80th %</Label>
+					</ReferenceLine>
+					<ReferenceLine y={1675} stroke="red" strokeDasharray="3 3" yAxisId="left">
+						<Label position="left">50th %</Label>
+					</ReferenceLine>
+					<ReferenceLine y={1540} stroke="red" strokeDasharray="3 3" yAxisId="left">
+						<Label position="left">20th %</Label>
+					</ReferenceLine>
 					<Bar dataKey="Wins" barSize={20} fill={primaryColor} yAxisId="right" />
-					<Line type="monotone" dataKey="Points Scored" stroke={secondaryColor} yAxisId="left" />
+					<Line type="monotone" dataKey="Points Scored" stroke="#17b978" yAxisId="left" />
 				</ComposedChart>
 			</ResponsiveContainer>
 		</Div>

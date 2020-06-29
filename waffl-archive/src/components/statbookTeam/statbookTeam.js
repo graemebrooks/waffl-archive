@@ -51,8 +51,10 @@ const Div = styled.div`
 	}
 
 	@media (max-width: 700px) {
+		width: 90vw;
+
 		.teamHeader {
-			max-width: 80vw;
+			max-width: 90vw;
 			display: flex;
 			flex-direction: column;
 
@@ -62,7 +64,13 @@ const Div = styled.div`
 		}
 
 		.teamDrawer {
-			max-width: 80vw;
+			max-width: 90vw;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.charts {
+			width: 100%;
 			display: flex;
 			flex-direction: column;
 		}
