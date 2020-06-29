@@ -37,37 +37,37 @@ const TeamRecordChart = ({ teamRecordData, team, primaryColor, secondaryColor })
 	const data = [
 		{
 			season: '2013',
-			'Points Scored': teamRecordData[convertName(team)].seasons[0].pointsFor,
+			'Points Scored': teamRecordData[convertName(team)].seasons[0].pointsFor / 14,
 			Wins: teamRecordData[convertName(team)].seasons[0].wins
 		},
 		{
 			season: '2014',
-			'Points Scored': teamRecordData[convertName(team)].seasons[1].pointsFor,
+			'Points Scored': teamRecordData[convertName(team)].seasons[1].pointsFor / 14,
 			Wins: teamRecordData[convertName(team)].seasons[1].wins
 		},
 		{
 			season: '2015',
-			'Points Scored': teamRecordData[convertName(team)].seasons[2].pointsFor,
+			'Points Scored': teamRecordData[convertName(team)].seasons[2].pointsFor / 14,
 			Wins: teamRecordData[convertName(team)].seasons[2].wins
 		},
 		{
 			season: '2016',
-			'Points Scored': teamRecordData[convertName(team)].seasons[3].pointsFor,
+			'Points Scored': teamRecordData[convertName(team)].seasons[3].pointsFor / 14,
 			Wins: teamRecordData[convertName(team)].seasons[3].wins
 		},
 		{
 			season: '2017',
-			'Points Scored': teamRecordData[convertName(team)].seasons[4].pointsFor,
+			'Points Scored': teamRecordData[convertName(team)].seasons[4].pointsFor / 14,
 			Wins: teamRecordData[convertName(team)].seasons[4].wins
 		},
 		{
 			season: '2018',
-			'Points Scored': teamRecordData[convertName(team)].seasons[5].pointsFor,
+			'Points Scored': teamRecordData[convertName(team)].seasons[5].pointsFor / 14,
 			Wins: teamRecordData[convertName(team)].seasons[5].wins
 		},
 		{
 			season: '2019',
-			'Points Scored': teamRecordData[convertName(team)].seasons[6].pointsFor,
+			'Points Scored': teamRecordData[convertName(team)].seasons[6].pointsFor / 14,
 			Wins: teamRecordData[convertName(team)].seasons[6].wins
 		}
 	];
@@ -77,18 +77,18 @@ const TeamRecordChart = ({ teamRecordData, team, primaryColor, secondaryColor })
 			<ResponsiveContainer width="100%" height={500}>
 				<ComposedChart data={data}>
 					<XAxis dataKey="season" stroke="#000000" />
-					<YAxis type="number" domain={[ 1100, 2300 ]} orientation="right" yAxisId="left" stroke="#000000" />
+					<YAxis type="number" domain={[ 75, 165 ]} orientation="right" yAxisId="left" stroke="#000000" />
 					<YAxis type="number" domain={[ 0, 14 ]} orientation="left" yAxisId="right" stroke="#000000" />
 					<Tooltip />
 					<Legend />
 					<CartesianGrid stroke={primaryColor} fill="#FFFFFF" />
-					<ReferenceLine y={1830} stroke="green" strokeDasharray="3 3" yAxisId="left">
+					<ReferenceLine y={130.7} stroke="green" strokeDasharray="3 3" yAxisId="left">
 						<Label stroke="green" position="right">
 							80th %
 						</Label>
 					</ReferenceLine>
-					<ReferenceLine y={1675} stroke="black" strokeDasharray="3 3" yAxisId="left" />
-					<ReferenceLine y={1540} stroke="red" strokeDasharray="3 3" yAxisId="left">
+					<ReferenceLine y={119.6} stroke="black" strokeDasharray="3 3" yAxisId="left" />
+					<ReferenceLine y={110} stroke="red" strokeDasharray="3 3" yAxisId="left">
 						<Label stroke="red" position="right">
 							20th %
 						</Label>
