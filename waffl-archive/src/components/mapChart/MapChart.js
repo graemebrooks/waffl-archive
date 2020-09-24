@@ -22,7 +22,8 @@ const teamLocations = {
 	],
 	wenches: [
 		{ markerOffset: 15, name: 'Champaign', coordinates: [ -88.2434, 40.1164 ] },
-		{ markerOffset: 15, name: 'Fort Sill', coordinates: [ -98.41841, 34.5938 ] }
+		{ markerOffset: 15, name: 'Fort Sill', coordinates: [ -98.41841, 34.5938 ] },
+		{ markerOffset: 15, name: 'Wrigleyville', coordinates: [ -87.6555, 41.4821 ] }
 	],
 	digitalRays: [
 		{ markerOffset: 15, name: 'College Station', coordinates: [ -96.3344, 30.628 ] },
