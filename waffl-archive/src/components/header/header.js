@@ -1,62 +1,61 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { push as Menu } from 'react-burger-menu';
+import styled from 'styled-components';
 
 import headerStyles from './header.module.scss';
 
-var styles = {
+const Menu = styled.div`
 	bmBurgerButton: {
-		position: 'fixed',
-		width: '36px',
-		height: '30px',
-		left: '36px',
-		top: '36px'
-	},
-	bmBurgerBars: {
-		background: '#17b978'
-	},
-	bmBurgerBarsHover: {
-		background: '#a90000'
-	},
-	bmCrossButton: {
-		height: '24px',
-		width: '24px'
-	},
-	bmCross: {
-		background: '#bdc3c7'
-	},
-	bmMenuWrap: {
-		position: 'fixed',
-		height: '100%'
-	},
-	bmMenu: {
-		background: '#213642',
-		padding: '1.5em 0.75em 0',
-		fontSize: '1.15em'
-	},
-	bmMorphShape: {
-		fill: '#373a47'
-	},
-	bmItemList: {
-		color: '#b8b7ad',
-		height: '100%',
-		display: 'flex',
-		outline: 'none'
-	},
-	bmItem: {
-		height: '10vh',
-		outline: 'none'
-	},
-	bmOverlay: {
-		background: 'rgba(0, 0, 0, 0.3)'
+		position: 'fixed';
+		width: '36px';
+		height: '30px';
+		left: '36px';
+		top: '36px';
 	}
-};
+	bmBurgerBars: {
+		background: '#17b978';
+	}
+	bmBurgerBarsHover: {
+		background: '#a90000';
+	}
+	bmCrossButton: {
+		height: '24px';
+		width: '24px';
+	}
+	bmCross: {
+		background: '#bdc3c7';
+	}
+	bmMenuWrap: {
+		position: 'fixed';
+		height: '100%';
+	}
+	bmMenu: {
+		background: '#213642';
+		padding: '1.5em 0.75em 0';
+		fontSize: '1.15em';
+	}
+	bmMorphShape: {
+		fill: '#373a47';
+	}
+	bmItemList: {
+		color: '#b8b7ad';
+		height: '100%';
+		display: 'flex';
+		outline: 'none';
+	}
+	bmItem: {
+		height: '10vh';
+		outline: 'none';
+	}
+	bmOverlay: {
+		background: 'rgba(0, 0, 0, 0.3)';
+	}
+`;
 
 const Header = () => {
 	return (
 		<Menu
 			className={headerStyles.navDrawer}
-			styles={styles}
 			pageWrapId={'page-wrap'}
 			outerContainerId={'outer-container'}
 		>

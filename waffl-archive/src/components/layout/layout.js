@@ -29,7 +29,7 @@ const Layout = (props) => {
 					{ rel: 'icon', type: 'image/png', sizes: '32x32', href: `${favicon}` },
 					{
 						rel: 'stylesheet',
-						href: 'https://fonts.googleapis.com/css2?family=Cairo&family=PT+Mono&display=swap'
+						href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'
 					}
 				]}
 			>

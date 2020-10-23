@@ -10,7 +10,7 @@ const Div = styled.div`
 	padding: 1rem;
 	margin: 0 auto;
 
-	font-family: 'PT Mono', monospace;
+	font-family: 'Inter', monospace;
 
 	span {
 		color: #17b978;

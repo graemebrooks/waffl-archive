@@ -53,7 +53,7 @@ const Div = styled.div`
 			margin: 0;
 			background: #213642;
 
-			font-family: 'Cairo', sans-serif;
+			font-family: 'Inter', sans-serif;
 		}
 
 		.active {

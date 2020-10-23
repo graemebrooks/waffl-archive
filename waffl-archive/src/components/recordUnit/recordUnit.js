@@ -11,7 +11,7 @@ const Div = styled.div`
 	align-items: center;
 	justify-content: center;
 
-	font-family: 'PT Mono', monospace;
+	font-family: 'Inter', monospace;
 
 	.recordItem {
 		display: flex;

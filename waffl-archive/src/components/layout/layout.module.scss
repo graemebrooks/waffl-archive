@@ -14,13 +14,14 @@
 }
 
 .index {
+	display: flex;
 	margin: 0;
 }
 
 h1,
 h2,
 h3 {
-	font-family: 'Cairo', sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 
 $breakpoint-mobile: 480px;
