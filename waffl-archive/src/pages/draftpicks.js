@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Spinner from '../components/spinner/spinner';
 import Layout from '../components/layout/layout';
 import DraftYear from '../components/draftYear/draftYear';
+import TitleBox from '../components/titleBox/titleBox';
 
 // styles
 const Div = styled.div`
@@ -155,7 +156,7 @@ const DraftpicksPage = () => {
 	if (!data2014 || !data2015 || !data2016 || !data2017 || !data2018 || !data2019 || !data2020 || !colors || !logos) {
 		return (
 			<Layout>
-				<h1>WAFFL Draft Pick Tracker</h1>
+				<TitleBox title="WAFFL Draft History" />
 				<Spinner />
 			</Layout>
 		);
@@ -163,7 +164,7 @@ const DraftpicksPage = () => {
 		const tabData = { tabTitles: [ 'First Round', 'Second Round', 'Third Round' ] };
 		return (
 			<Layout>
-				<h1>WAFFL Draft Pick Tracker</h1>
+				<TitleBox title="WAFFL Draft History" />
 				<Div>
 					<h3 className={selected.selected === '2014' ? 'active' : ''} onClick={(e) => switchDraft(e)}>
 						2014

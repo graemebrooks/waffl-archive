@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Layout from '../components/layout/layout';
 import RecordRow from '../components/recordRow/recordRow';
 import Spinner from '../components/spinner/spinner';
+import TitleBox from '../components/titleBox/titleBox';
 
 // styles
 import recordbookPageStyles from './recordbookPage.module.scss';
@@ -19,7 +20,7 @@ const RecordbookPage = () => {
 	if (!data) {
 		return (
 			<Layout>
-				<h1>WAFFL Recordbook</h1>
+				<TitleBox title="WAFFL Recordbook"></TitleBox>
 				<Spinner />
 			</Layout>
 		);
@@ -51,7 +52,7 @@ const RecordbookPage = () => {
 
 		return (
 			<Layout>
-				<h1>WAFFL Recordbook</h1>
+				<TitleBox title="WAFFL Recordbook"></TitleBox>
 				<h2 className={recordbookPageStyles.recordType}>Player Records</h2>
 				<RecordRow data={formattedData.weeklyRecords} />
 				<RecordRow data={formattedData.seasonRecords} />

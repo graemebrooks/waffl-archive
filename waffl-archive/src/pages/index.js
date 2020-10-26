@@ -4,7 +4,7 @@ import React from 'react';
 import Layout from '../components/layout/layout';
 
 // static assets
-import wafflLogo from '../../static/waffl-logos/wafflArchive.png';
+import wafflLogo from '../../static/waffl-logos/wafflArchiveBanner.png';
 
 // styles
 import indexStyles from './indexPage.module.scss';
@@ -14,7 +14,7 @@ export default () => (
 		<div className={indexStyles.content}>
 			<div className={indexStyles.logoBox}>
 				<img src={wafflLogo} className={indexStyles.logo} alt="WAFFL Logo" />
-				<h2>The digital home of the Westwood Affiliated Fantasy Football League</h2>
+				<h2>Westwood Affiliated Fantasy Football League</h2>
 				<p className={indexStyles.introText}>
 					The Westwood Affiliated Fantasy Football League or "WAFFL" was founded in 2013. It's founding
 					members included Kyle Harris, Ashley Melero, Jacob Phillips, Kelso Brooks, Dylon Hopp, Matt Canik,

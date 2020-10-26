@@ -2,17 +2,24 @@
 	display: flex;
 	flex-direction: column;
 	list-style-type: none;
+	padding: 0;
 	margin: 0;
+	width: 14rem;
 
 	li {
-		margin: 2rem 0;
+		margin-bottom: 0;
+		height: 2rem;
+		display: flex;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 }
 
 .nav-item {
 	color: #f1f1f1;
 	font-size: 1.2rem;
-	margin: auto 1rem;
+	padding: 0 1rem;
 	text-decoration: none;
 	display: flex;
 	outline: none;
@@ -23,11 +30,15 @@ i {
 }
 
 .active-nav-item {
-	border-bottom: .2rem solid #17b978;
+	background-color: rgb(112, 122, 133);
+	width: 100%;
+	height: 100%;
+	align-items: center;
 }
 
 .navDrawer {
-	background: rgb(81, 89, 97);
+	background: rgb(147, 160, 172);
 	min-height: 100vh;
 	width: 14rem;
+	padding-top: 1rem;
 }

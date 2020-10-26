@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Layout from '../components/layout/layout';
 import StatbookTeam from '../components/statbookTeam/statbookTeam';
 import Spinner from '../components/spinner/spinner';
+import TitleBox from '../components/titleBox/titleBox';
 
 // styles
 import statbookPageStyles from './statbookPage.module.scss';
@@ -22,14 +23,14 @@ const StatbookPage = () => {
 	if (!data || !teamRecordData) {
 		return (
 			<Layout>
-				<h1>WAFFL Statbook</h1>
+				<TitleBox title="WAFFL Statbook" />
 				<Spinner />
 			</Layout>
 		);
 	} else {
 		return (
 			<Layout>
-				<h1>WAFFL Statbook</h1>
+				<TitleBox title="WAFFL Statbook" />
 				<div className={statbookPageStyles.statsContainer}>
 					{data.teams.map((team) => {
 						let teamPBP;

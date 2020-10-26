@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // imported components
 import Layout from '../components/layout/layout';
 import AwardUnit from '../components/awardUnit/awardUnit';
+import TitleBox from '../components/titleBox/titleBox';
 
 import trophyData from '../../static/trophyData';
 
@@ -209,7 +210,7 @@ const TrophyCasePage = () => {
 	return (
 		<Layout>
 			<Div format={selectedFormat}>
-			<h1>WAFFL Trophy Case</h1>
+				<TitleBox title="WAFFL Trophy Case" />
 				<div className="formatSelect">
 					<h3 className={selectedFormat === 'By Award' ? 'active' : ''} onClick={(e) => switchFormat(e)}>
 						By Award
