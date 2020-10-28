@@ -8,6 +8,7 @@ const Div = styled.div`
 	background: rgb(147, 160, 172);
 	padding: 1rem;
 	border-radius: 5px;
+	width: 100%;
 
 	.title {
 		margin: 0;

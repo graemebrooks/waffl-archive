@@ -35,11 +35,14 @@ const Layout = (props) => {
 			>
 				<script src="https://kit.fontawesome.com/7046b37ec7.js" crossorigin="anonymous" />
 			</Helmet>
-			<Header outerContainerId={'outer-container'} pageWrapId={'page-wrap'} />
-			<div className={layoutStyles.container} id="page-wrap">
-				<div className={layoutStyles.content}>{props.children}</div>
-				{/* <Footer /> */}
+			<div className={layoutStyles.body}>
+				<Header outerContainerId={'outer-container'} pageWrapId={'page-wrap'} />
+				<div className={layoutStyles.container} id="page-wrap">
+					<div className={layoutStyles.content}>{props.children}</div>
+				</div>
+				<div className={layoutStyles.sideBox} />
 			</div>
+			<Footer />
 		</div>
 	);
 };
